@@ -1,4 +1,22 @@
-body {
-    font-family: "IBM Plex Mono", sans-serif;
-    font-weight: 400;
+* {
+  box-sizing: border-box;
+  /* letter-spacing пока тут потом может сделаю как в разборе чекпоинт 3 */
+  letter-spacing: -0.03em;
 }
+
+body {
+  font-family: "IBM Plex Mono", sans-serif;
+  width: 100%;
+  font-weight: 400;
+  background: #000;
+  /* задал белый цвет всему документу, так как его больше всего - другие цвета шрифта через модификаторы */
+  color: #fff;
+}
+
+.container {
+  padding: 0 15px;
+  margin: 0 auto;
+  max-width: 1180px;
+}
+
+
