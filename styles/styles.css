@@ -31,8 +31,15 @@ body {
 .header {
   padding-top: 27px;
 }
+
+.header__container-wrapper {
+  height: 55px;
+}
+
 /* первый варинт логотипа */
 .header__logo-link {
+  margin-top: 9px;
+  display: inline-block;
   position: relative;
   text-decoration: none;
   cursor: pointer;
@@ -72,3 +79,28 @@ body {
   cursor: pointer;
 
 } */
+
+.nav-menu {
+  margin-top: 6px;
+  float: right;
+  vertical-align: top;
+}
+
+.nav-menu__item {
+  display: inline-block;
+  margin-right: 50px;
+
+}
+
+.nav-menu__item:last-child {
+  margin-right: 0;
+}
+
+.nav-menu__link {
+  font-size: 18px;
+  line-height: 23px;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  
+}
