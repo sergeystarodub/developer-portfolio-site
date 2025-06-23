@@ -89,7 +89,6 @@ body {
 .nav-menu__item {
   display: inline-block;
   margin-right: 50px;
-
 }
 
 .nav-menu__item:last-child {
@@ -102,5 +101,25 @@ body {
   text-align: center;
   text-decoration: none;
   color: #fff;
-  
+}
+
+.nav-menu__link:hover {
+  color: #1bff07;
+}
+
+.about__content-container {
+  position: relative;
+  /* для визуального контроля - потом закоментить */
+  /* height: 683px;
+  border: 1px solid red; */
+}
+
+.about__desc {
+  position: absolute;
+  /* расстояние от хэдера */
+  top: 252px;
+  /* left 0 не нужен так как будет смещение за границы контейнера до 1180 а не 1150 пикселей */
+  width: 430px;
+  font-size: 20px;
+  line-height: 26px;
 }
