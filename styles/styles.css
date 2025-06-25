@@ -9,7 +9,7 @@ body {
   width: 100%;
   font-weight: 400;
   background: #000;
-  /* задал белый цвет всему документу, так как его больше всего - другие цвета шрифта через модификаторы */
+  /* задал белый цвет текста всему документу, так как его больше всего - другие цвета шрифта через модификаторы */
   color: #fff;
 }
 
@@ -22,6 +22,8 @@ body {
 .about {
   margin-bottom: 150px;
   width: 100%;
+  /* добавил для устранения бага при уменьшении окна браузера */
+  min-width: 1180px;
   height: 765px;
   background-image: url("../resources/frontend-developer/developer-image.png");
   background-repeat: no-repeat;
