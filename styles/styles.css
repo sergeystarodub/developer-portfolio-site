@@ -1,3 +1,7 @@
+/* ======================
+  1 Базовые настройки
+========================= */
+
 * {
   box-sizing: border-box;
   /* letter-spacing пока тут потом может сделаю как в разборе чекпоинт 3 */
@@ -13,13 +17,19 @@ body {
   color: #fff;
 }
 
+/* ======================
+  2 Контейнер (ограничение ширины и отступы)
+========================= */
 .container {
   padding: 0 15px;
   margin: 0 auto;
   max-width: 1180px;
 }
 
-.about {
+/* ======================
+  3 Hero-блок (первая секция с фоном)
+========================= */
+.hero-wrapper {
   margin-bottom: 150px;
   width: 100%;
   /* добавил для устранения бага при уменьшении окна браузера */
@@ -31,6 +41,22 @@ body {
   background-position: center;
 }
 
+/* было так раньше -потом удалить */
+/* .hero {
+  margin-bottom: 150px;
+  width: 100%;
+  добавил для устранения бага при уменьшении окна браузера
+  min-width: 1180px;
+  height: 765px;
+  background-image: url("../resources/frontend-developer/developer-image.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+} */
+
+/* ======================
+  4 Хедер (фон хедера прозрачный, он "сидит" на фоне hero-wrapper)
+========================= */
 .header {
   padding-top: 27px;
 }
@@ -110,14 +136,17 @@ body {
   color: #1bff07;
 }
 
-.about__content-container {
+/* ======================
+  4 Элементы секции hero
+========================= */
+.hero__content-container {
   position: relative;
   /* для визуального контроля - потом закоментить */
   /* height: 683px;
   border: 1px solid red; */
 }
 
-.about__desc {
+.hero__desc {
   position: absolute;
   /* расстояние от хэдера */
   top: 252px;
@@ -129,7 +158,7 @@ body {
   line-height: 26px;
 }
 
-.about__title {
+.hero__title {
   position: absolute;
   top: 384px;
   /*left: 9px расчитал как 15-6,где 15 боковой паддинг,а 6 заезд за границу контейнера слева */
@@ -139,6 +168,6 @@ body {
   line-height: 70px;
 }
 
-.about__title_green {
+.hero__title_green {
   color: #1bff07;
 }
