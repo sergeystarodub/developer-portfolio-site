@@ -1,0 +1,173 @@
+/* ======================
+  1 Базовые настройки
+========================= */
+
+* {
+  box-sizing: border-box;
+  /* letter-spacing пока тут потом может сделаю как в разборе чекпоинт 3 */
+  letter-spacing: -0.03em;
+}
+
+body {
+  font-family: "IBM Plex Mono", sans-serif;
+  width: 100%;
+  font-weight: 400;
+  background: #000;
+  /* задал белый цвет текста всему документу, так как его больше всего - другие цвета шрифта через модификаторы */
+  color: #fff;
+}
+
+/* ======================
+  2 Контейнер (ограничение ширины и отступы)
+========================= */
+.container {
+  padding: 0 15px;
+  margin: 0 auto;
+  max-width: 1180px;
+}
+
+/* ======================
+  3 Hero-блок (первая секция с фоном)
+========================= */
+.hero-wrapper {
+  margin-bottom: 150px;
+  width: 100%;
+  /* добавил для устранения бага при уменьшении окна браузера */
+  min-width: 1180px;
+  height: 765px;
+  background-image: url("../resources/frontend-developer/developer-image.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/* было так раньше -потом удалить */
+/* .hero {
+  margin-bottom: 150px;
+  width: 100%;
+  добавил для устранения бага при уменьшении окна браузера
+  min-width: 1180px;
+  height: 765px;
+  background-image: url("../resources/frontend-developer/developer-image.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+} */
+
+/* ======================
+  4 Хедер (фон хедера прозрачный, он "сидит" на фоне hero-wrapper)
+========================= */
+.header {
+  padding-top: 27px;
+}
+
+.header__container-wrapper {
+  height: 55px;
+}
+
+/* первый варинт логотипа */
+.header__logo-link {
+  margin-top: 9px;
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.header__logo {
+  width: 130px;
+  height: 39px;
+  border-radius: 100px;
+  background: #000;
+}
+
+.header__logo-text {
+  position: absolute;
+  left: 9px;
+  top: -9px;
+  width: 109px;
+  font-weight: 700;
+  font-size: 42.41px;
+  line-height: 55px;
+  letter-spacing: -0.11em;
+  text-transform: uppercase;
+  color: #1bff07;
+}
+
+/* так не получилось - второй вариант логотипа */
+/* .header__logo-link {
+  padding: 9px 12px 7px 9px;
+  width: 130px;
+  border-radius: 100px;
+  background-color: #000;
+  color: #1bff07;
+  text-decoration: none;
+  font-size: 42.41px;
+  line-height: 55px;
+  letter-spacing: -0.11em;
+  cursor: pointer;
+
+} */
+
+.nav-menu {
+  margin-top: 6px;
+  float: right;
+  vertical-align: top;
+}
+
+.nav-menu__item {
+  display: inline-block;
+  margin-right: 50px;
+}
+
+.nav-menu__item:last-child {
+  margin-right: 0;
+}
+
+.nav-menu__link {
+  font-size: 18px;
+  line-height: 23px;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+}
+
+.nav-menu__link:hover {
+  color: #1bff07;
+}
+
+/* ======================
+  4 Элементы секции hero
+========================= */
+.hero__content-container {
+  position: relative;
+  /* для визуального контроля - потом закоментить */
+  /* height: 683px;
+  border: 1px solid red; */
+}
+
+.hero__desc {
+  position: absolute;
+  /* расстояние от хэдера */
+  top: 252px;
+  /* 15 так как падинги по бокам 15px а позиционируется от границы контейнера - то есть от 1180px */
+  left: 15px;
+  /* left 0 не нужен так как будет смещение за границы контейнера до 1180 а не 1150 пикселей */
+  width: 430px;
+  font-size: 20px;
+  line-height: 26px;
+}
+
+.hero__title {
+  position: absolute;
+  top: 384px;
+  /*left: 9px расчитал как 15-6,где 15 боковой паддинг,а 6 заезд за границу контейнера слева */
+  left: 9px;
+  width: 919px;
+  font-size: 80px;
+  line-height: 70px;
+}
+
+.hero__title_green {
+  color: #1bff07;
+}
