@@ -176,7 +176,7 @@ body {
   5 Секция проекты - projects
 ========================= */
 /* В макете встречаются элементы - некоторые заголовки и параграфы,
-которые имеют одинаковые CSS свойства, поэтому им буду задавать класс-блок по БЭМ
+которые имеют одинаковые CSS свойства, поэтому им буду задавать класс-блок по БЭМ для повторного использования
 и дополнительный класс для расположения - внешней геометрии - то есть микс по БЭМ */
 
 /* БЭМ-блок заголовка */
@@ -184,4 +184,44 @@ body {
 .title {
   font-size: 55px;
   line-height: 72px;
+}
+
+.projects__title {
+  margin-bottom: 40px;
+}
+
+.projects-item {
+  width: 100%;
+  height: 550px;
+  border-radius: 30px;
+}
+
+.projects-item__realhome {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-image: url("../resources/projects-image/Realhome-image.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.projects-item__box {
+  position: absolute;
+  left: 50px;
+  bottom: 50px;
+}
+
+.heading {
+  font-size: 35px;
+  line-height: 46px;
+}
+
+.projects-item__heading {
+  margin-bottom: 5px;
+}
+
+.projects-item__desc {
+  font-size: 30px;
+  line-height: 39px;
 }
