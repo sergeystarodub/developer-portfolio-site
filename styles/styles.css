@@ -240,3 +240,32 @@ body {
   font-size: 30px;
   line-height: 39px;
 }
+
+.projects__btn {
+  padding: 56px 85px 58px 86px;
+  width: 582px;
+  display: inline-block;
+  border-radius: 10px;
+  font-size: 30px;
+  line-height: 39px;
+  text-align: center;
+  background-color: #1bff07;
+  text-decoration: none;
+  color: #000;
+  cursor: pointer;
+}
+
+.projects__btn:hover {
+  /* чтобы не увеличивалась высота ведь border дает по 1px сверху и снизу */
+  height: 153px;
+  /* после pixel perfect уменьшил на 2px так как если height: 153px и border 1px сверху и снизу line-height тоже уменьшается на 2px */
+  line-height: 37px;
+  border: 1px solid #1bff07;
+  background-color: #000;
+  color: #1bff07;
+}
+
+
+.projects {
+  margin-bottom: 150px;
+}
