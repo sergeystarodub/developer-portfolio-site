@@ -190,20 +190,35 @@ body {
   margin-bottom: 40px;
 }
 
+.projects-list {
+  margin-bottom: 80px;
+}
+
 .projects-item {
   width: 100%;
   height: 550px;
   border-radius: 30px;
 }
 
-.projects-item__realhome {
+.projects-item__background {
   position: relative;
   width: 100%;
   height: 100%;
-  background-image: url("../resources/projects-image/Realhome-image.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+
+.projects-item__background_realhome {
+  background-image: url("../resources/projects-image/Realhome-image.png");
+}
+
+.projects-item__background_glass {
+  background-image: url("../resources/projects-image/Glass-image.png");
+}
+
+.projects-item__background_fesiyen {
+  background-image: url("../resources/projects-image/Fesiyen-image.png");
 }
 
 .projects-item__box {
