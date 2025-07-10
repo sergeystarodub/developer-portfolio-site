@@ -65,8 +65,8 @@ body {
   height: 55px;
 }
 
-/* первый варинт логотипа */
-.header__logo-link {
+/* первый варинт логотипа - закоментил - сделал вторым вариантом*/
+/* .header__logo-link {
   margin-top: 9px;
   display: inline-block;
   position: relative;
@@ -92,22 +92,34 @@ body {
   letter-spacing: -0.11em;
   text-transform: uppercase;
   color: #1bff07;
-}
+} */
 
-/* так не получилось - второй вариант логотипа */
-/* .header__logo-link {
-  padding: 9px 12px 7px 9px;
+/* второй вариант логотипа */
+/* различаются размещение орлов надписи по высоте - подумать как сделать - сделал в span */
+.header__logo-link {
+  display: inline-block;
+  margin-top: 9px;
+  padding-left: 9px;
   width: 130px;
   border-radius: 100px;
   background-color: #000;
   color: #1bff07;
   text-decoration: none;
   font-size: 42.41px;
-  line-height: 55px;
-  letter-spacing: -0.11em;
+  /* line-height: 55px; */
+  line-height: 39px;
+  font-weight: 700;
+  /* letter-spacing: -0.11em; */
   cursor: pointer;
+}
 
-} */
+/* спозиционировал span - у меня надпись как бы по центру line-height: 39px в макете вверху 9 внизу 7 то есть если по центру то 8 и 8 значит у меня нужно 1px поднять снизу */
+.header__logo-span {
+  position: relative;
+  bottom: 1px;
+  letter-spacing: -0.11em;
+  text-transform: uppercase;
+}
 
 .nav-menu {
   margin-top: 6px;
@@ -264,7 +276,6 @@ body {
   background-color: #000;
   color: #1bff07;
 }
-
 
 .projects {
   margin-bottom: 150px;
