@@ -61,7 +61,11 @@ body {
   padding-top: 27px;
 }
 
+/* сделал через флексбокс */
 .header__container-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
   height: 55px;
 }
 
@@ -123,18 +127,27 @@ body {
 
 .nav-menu {
   margin-top: 6px;
-  float: right;
-  vertical-align: top;
+  /* это было до флексбокса */
+  /* float: right;
+  vertical-align: top; */
 }
 
-.nav-menu__item {
+.nav-menu__list {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+}
+
+
+/* до использования флексбокса */
+/* .nav-menu__item {
   display: inline-block;
   margin-right: 50px;
 }
 
 .nav-menu__item:last-child {
   margin-right: 0;
-}
+} */
 
 .nav-menu__link {
   font-size: 18px;
