@@ -138,7 +138,6 @@ body {
   gap: 50px;
 }
 
-
 /* до использования флексбокса */
 /* .nav-menu__item {
   display: inline-block;
@@ -293,3 +292,56 @@ body {
 .projects {
   margin-bottom: 150px;
 }
+
+/* ======================
+  6 Секция компетенции - competencies
+========================= */
+.competencies__title {
+  margin-bottom: 104px;
+}
+
+/* это не нужно */
+/* .competencies-item__heading {
+  margin-bottom: 15px;
+} */
+
+.heading_green {
+  color: #1bff07;
+}
+
+.competencies-item__heading-wrapper {
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.competencies-item__heading-wrapper::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0px;
+  bottom: 62px;
+  width: 45px;
+  height: 44px;
+  background-image: url("../resources/competencies-icons/competencies-icons-one.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.competencies-item__heading-wrapper_less::before {
+  bottom: 58px;
+}
+
+/* БЭМ-блок параграфа */
+/* color уже задан в body */
+.text {
+  width: 778px;
+  font-size: 22px;
+  line-height: 29px;
+}
+
+.competencies-item {
+  margin-bottom: 120px;
+}
+
+/* сделать последнему ласт чайлд  - это потом удалить*/
