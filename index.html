@@ -29,15 +29,17 @@
       <header class="header">
         <div class="container">
           <div class="header__container-wrapper">
-            <!-- первый вариант логотипа -->
-            <a class="header__logo-link" href="#">
+            <!-- первый вариант логотипа - его закоментил - сделал вторым вариантом-->
+            <!-- <a class="header__logo-link" href="#">
               <div class="header__logo">
                 <p class="header__logo-text">ORLOV</p>
               </div>
-            </a>
+            </a> -->
 
-            <!-- так не получилось - второй вариант логотипа -->
-            <!-- <a class="header__logo-link" href="#">ORLOV</a> -->
+            <!-- второй вариант логотипа - сделал его-->
+            <a class="header__logo-link" href="#"
+              ><span class="header__logo-span">ORLOV</span></a
+            >
             <nav class="nav-menu">
               <ul class="nav-menu__list">
                 <li class="nav-menu__item">
@@ -72,7 +74,46 @@
     </div>
 
     <!-- Основной контент страницы -->
-    <main></main>
+    <main>
+      <section class="projects">
+        <div class="container">
+          <h2 class="title projects__title">Самые свежие проекты</h2>
+          <ul class="projects-list">
+            <li class="projects-item">
+              <div
+                class="projects-item__background projects-item__background_realhome"
+              >
+                <div class="projects-item__box">
+                  <h3 class="projects-item__heading heading">Realhome</h3>
+                  <p class="projects-item__desc">дизайн,верстка, настройка</p>
+                </div>
+              </div>
+            </li>
+            <li class="projects-item">
+              <div
+                class="projects-item__background projects-item__background_glass"
+              >
+                <div class="projects-item__box">
+                  <h3 class="projects-item__heading heading">GLASS</h3>
+                  <p class="projects-item__desc">разработка интерфейса</p>
+                </div>
+              </div>
+            </li>
+            <li class="projects-item">
+              <div
+                class="projects-item__background projects-item__background_fesiyen"
+              >
+                <div class="projects-item__box">
+                  <h3 class="projects-item__heading heading">Fesiyen</h3>
+                  <p class="projects-item__desc">разработка интерфейса</p>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <a class="projects__btn" href="#">Смотреть все проекты</a>
+        </div>
+      </section>
+    </main>
     <!-- в футере использовать шрифт "Manrope" - смотри свойства -->
     <!-- Подвал -->
     <!-- <footer></footer> -->
