@@ -319,17 +319,39 @@ body {
   display: block;
   position: absolute;
   left: 0px;
+  /* высчитал как 46px - высота текста плюс 16 - отступ */
   bottom: 62px;
   width: 45px;
   height: 44px;
-  background-image: url("../resources/competencies-icons/competencies-icons-one.png");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
 }
 
+.competencies-item__heading-wrapper_background-icon-one::before {
+  background-image: url("../resources/competencies-icons/competencies-icons-one.png");
+  
+}
+
+.competencies-item__heading-wrapper_background-icon-two::before {
+  background-image: url("../resources/competencies-icons/competencies-icons-two.png");
+}
+
+.competencies-item__heading-wrapper_background-icon-three::before {
+  background-image: url("../resources/competencies-icons/competencies-icons-three.png");
+}
+
+.competencies-item__heading-wrapper_background-icon-four::before {
+  background-image: url("../resources/competencies-icons/competencies-icons-four.png");
+}
+
 .competencies-item__heading-wrapper_less::before {
+  /* высчитал как 46px - высота текста плюс 12 - отступ */
   bottom: 58px;
+}
+
+.heading_short-text {
+  width: 651px;
 }
 
 /* БЭМ-блок параграфа */
@@ -340,8 +362,18 @@ body {
   line-height: 29px;
 }
 
+.competencies-item__heading-wrapper_larger-indentation::before {
+  bottom: 108px;
+}
+
 .competencies-item {
   margin-bottom: 120px;
 }
 
-/* сделать последнему ласт чайлд  - это потом удалить*/
+.competencies-item:last-child {
+  margin-bottom: 0;
+}
+
+.competencies {
+  margin-bottom: 150px;
+}
