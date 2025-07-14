@@ -192,7 +192,7 @@ body {
   line-height: 70px;
 }
 
-.hero__title_green {
+.hero__title_color-green {
   color: #1bff07;
 }
 
@@ -233,15 +233,15 @@ body {
   background-position: center;
 }
 
-.projects-item__background_realhome {
+.projects-item__background_project-realhome {
   background-image: url("../resources/projects-image/Realhome-image.png");
 }
 
-.projects-item__background_glass {
+.projects-item__background_project-glass {
   background-image: url("../resources/projects-image/Glass-image.png");
 }
 
-.projects-item__background_fesiyen {
+.projects-item__background_project-fesiyen {
   background-image: url("../resources/projects-image/Fesiyen-image.png");
 }
 
@@ -305,7 +305,7 @@ body {
   margin-bottom: 15px;
 } */
 
-.heading_green {
+.heading_color-green {
   color: #1bff07;
 }
 
@@ -328,24 +328,24 @@ body {
   background-position: center;
 }
 
-.competencies-item__heading-wrapper_background-icon-one::before {
+.competencies-item__heading-wrapper_icon-type-one::before {
   background-image: url("../resources/competencies-icons/competencies-icons-one.png");
   
 }
 
-.competencies-item__heading-wrapper_background-icon-two::before {
+.competencies-item__heading-wrapper_icon-type-two::before {
   background-image: url("../resources/competencies-icons/competencies-icons-two.png");
 }
 
-.competencies-item__heading-wrapper_background-icon-three::before {
+.competencies-item__heading-wrapper_icon-type-three::before {
   background-image: url("../resources/competencies-icons/competencies-icons-three.png");
 }
 
-.competencies-item__heading-wrapper_background-icon-four::before {
+.competencies-item__heading-wrapper_icon-type-four::before {
   background-image: url("../resources/competencies-icons/competencies-icons-four.png");
 }
 
-.competencies-item__heading-wrapper_less::before {
+.competencies-item__heading-wrapper_offset-bottom-small::before {
   /* высчитал как 46px - высота текста плюс 12 - отступ */
   bottom: 58px;
 }
@@ -362,7 +362,8 @@ body {
   line-height: 29px;
 }
 
-.competencies-item__heading-wrapper_larger-indentation::before {
+.competencies-item__heading-wrapper_offset-bottom-large::before {
+  /* высчитал как 92px - высота текста плюс 16 - отступ */
   bottom: 108px;
 }
 
