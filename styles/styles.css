@@ -389,3 +389,14 @@ body {
 .heading_short-title {
   width: 403px;
 }
+
+.services-item__image-wrapper {
+  height: 200px;
+}
+
+.services-item__image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
