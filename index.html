@@ -37,7 +37,8 @@
             </a> -->
 
             <!-- второй вариант логотипа - сделал его-->
-            <a class="header__logo-link" href="#"
+            <!-- если выкладывать сайт на хостинг поменять href="#" на href="/" -->
+            <a class="header__logo-link" href="#" aria-label="Главная - логотип"
               ><span class="header__logo-span">ORLOV</span></a
             >
             <nav class="nav-menu">
@@ -66,7 +67,7 @@
             Разрабатываю имиджевые сайты для малого и среднего бизнеса, которые
             повышают престиж компании и позволяют выделиться на фоне конкурентов
           </p>
-          <h1 class="hero__title hero__title_green">
+          <h1 class="hero__title hero__title_color-green">
             Привет, я Саша — фронтенд разработчик и дизайнер сайтов
           </h1>
         </div>
@@ -75,13 +76,14 @@
 
     <!-- Основной контент страницы -->
     <main>
+      <!-- Секция проекты -->
       <section class="projects">
         <div class="container">
           <h2 class="title projects__title">Самые свежие проекты</h2>
           <ul class="projects-list">
             <li class="projects-item">
               <div
-                class="projects-item__background projects-item__background_realhome"
+                class="projects-item__background projects-item__background_project-realhome"
               >
                 <div class="projects-item__box">
                   <h3 class="projects-item__heading heading">Realhome</h3>
@@ -91,7 +93,7 @@
             </li>
             <li class="projects-item">
               <div
-                class="projects-item__background projects-item__background_glass"
+                class="projects-item__background projects-item__background_project-glass"
               >
                 <div class="projects-item__box">
                   <h3 class="projects-item__heading heading">GLASS</h3>
@@ -101,7 +103,7 @@
             </li>
             <li class="projects-item">
               <div
-                class="projects-item__background projects-item__background_fesiyen"
+                class="projects-item__background projects-item__background_project-fesiyen"
               >
                 <div class="projects-item__box">
                   <h3 class="projects-item__heading heading">Fesiyen</h3>
@@ -111,6 +113,85 @@
             </li>
           </ul>
           <a class="projects__btn" href="#">Смотреть все проекты</a>
+        </div>
+      </section>
+      <!-- Секция компетенции -->
+      <section class="competencies">
+        <div class="container">
+          <h2 class="title competencies__title">Мои компетенции</h2>
+          <ul class="competencies-list">
+            <li class="competencies-item">
+              <div
+                class="competencies-item__heading-wrapper competencies-item__heading-wrapper_icon-type-one competencies-item__heading-wrapper_offset-bottom-small"
+              >
+                <h3
+                  class="heading competencies-item__heading heading_color-green"
+                >
+                  HTML и CSS
+                </h3>
+              </div>
+              <p class="text competencies-item__text">
+                это основа фронтенд разработки. Умение создавать и правильно
+                структурировать HTML-документы, а также применять стили к этим
+                документам на CSS, является обязательным навыком для каждого
+                фронтенд разработчика.
+              </p>
+            </li>
+            <li class="competencies-item">
+              <div
+                class="competencies-item__heading-wrapper competencies-item__heading-wrapper_icon-type-two"
+              >
+                <h3
+                  class="heading competencies-item__heading heading_color-green"
+                >
+                  JavaScript
+                </h3>
+              </div>
+              <p class="text competencies-item__text">
+                это язык программирования, который используется для создания
+                динамического и интерактивного пользовательского интерфейса.
+                Хороший фронтенд разработчик должен быть знаком с основами
+                JavaScript, включая работу с DOM-деревом, асинхронными запросами
+                и манипуляцией данными на стороне клиента.
+              </p>
+            </li>
+            <li class="competencies-item">
+              <div
+                class="competencies-item__heading-wrapper competencies-item__heading-wrapper_icon-type-three"
+              >
+                <h3
+                  class="heading competencies-item__heading heading_color-green"
+                >
+                  Работа с библиотеками и фреймворками
+                </h3>
+              </div>
+              <p class="text competencies-item__text">
+                фронтенд разработчики должны быть знакомы с различными
+                библиотеками и фреймворками, такими как React, Angular, Vue и
+                другими. Умение использовать готовые решения, адаптировать их
+                под нужды проекта и расширять их функциональность, является
+                очень важным навыком.
+              </p>
+            </li>
+            <li class="competencies-item">
+              <div
+                class="competencies-item__heading-wrapper competencies-item__heading-wrapper_icon-type-four competencies-item__heading-wrapper_offset-bottom-large"
+              >
+                <h3
+                  class="heading competencies-item__heading heading_color-green heading_short-text"
+                >
+                  Разработка для мобильных устройств и адаптивная верстка
+                </h3>
+              </div>
+              <p class="text competencies-item__text">
+                фронтенд разработчики должны быть знакомы с различными
+                библиотеками и фреймворками, такими как React, Angular, Vue и
+                другими. Умение использовать готовые решения, адаптировать их
+                под нужды проекта и расширять их функциональность, является
+                очень важным навыком.
+              </p>
+            </li>
+          </ul>
         </div>
       </section>
     </main>

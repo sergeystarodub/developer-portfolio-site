@@ -138,7 +138,6 @@ body {
   gap: 50px;
 }
 
-
 /* до использования флексбокса */
 /* .nav-menu__item {
   display: inline-block;
@@ -193,7 +192,7 @@ body {
   line-height: 70px;
 }
 
-.hero__title_green {
+.hero__title_color-green {
   color: #1bff07;
 }
 
@@ -234,15 +233,15 @@ body {
   background-position: center;
 }
 
-.projects-item__background_realhome {
+.projects-item__background_project-realhome {
   background-image: url("../resources/projects-image/Realhome-image.png");
 }
 
-.projects-item__background_glass {
+.projects-item__background_project-glass {
   background-image: url("../resources/projects-image/Glass-image.png");
 }
 
-.projects-item__background_fesiyen {
+.projects-item__background_project-fesiyen {
   background-image: url("../resources/projects-image/Fesiyen-image.png");
 }
 
@@ -291,5 +290,91 @@ body {
 }
 
 .projects {
+  margin-bottom: 150px;
+}
+
+/* ======================
+  6 Секция компетенции - competencies
+========================= */
+.competencies__title {
+  margin-bottom: 104px;
+}
+
+/* это не нужно */
+/* .competencies-item__heading {
+  margin-bottom: 15px;
+} */
+
+.heading_color-green {
+  color: #1bff07;
+}
+
+.competencies-item__heading-wrapper {
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.competencies-item__heading-wrapper::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0px;
+  /* высчитал как 46px - высота текста плюс 16 - отступ */
+  bottom: 62px;
+  width: 45px;
+  height: 44px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.competencies-item__heading-wrapper_icon-type-one::before {
+  background-image: url("../resources/competencies-icons/competencies-icons-one.png");
+  
+}
+
+.competencies-item__heading-wrapper_icon-type-two::before {
+  background-image: url("../resources/competencies-icons/competencies-icons-two.png");
+}
+
+.competencies-item__heading-wrapper_icon-type-three::before {
+  background-image: url("../resources/competencies-icons/competencies-icons-three.png");
+}
+
+.competencies-item__heading-wrapper_icon-type-four::before {
+  background-image: url("../resources/competencies-icons/competencies-icons-four.png");
+}
+
+.competencies-item__heading-wrapper_offset-bottom-small::before {
+  /* высчитал как 46px - высота текста плюс 12 - отступ */
+  bottom: 58px;
+}
+
+.heading_short-text {
+  width: 651px;
+}
+
+/* БЭМ-блок параграфа */
+/* color уже задан в body */
+.text {
+  width: 778px;
+  font-size: 22px;
+  line-height: 29px;
+}
+
+.competencies-item__heading-wrapper_offset-bottom-large::before {
+  /* высчитал как 92px - высота текста плюс 16 - отступ */
+  bottom: 108px;
+}
+
+.competencies-item {
+  margin-bottom: 120px;
+}
+
+.competencies-item:last-child {
+  margin-bottom: 0;
+}
+
+.competencies {
   margin-bottom: 150px;
 }
