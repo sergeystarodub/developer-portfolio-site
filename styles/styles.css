@@ -400,3 +400,24 @@ body {
   height: 100%;
   object-fit: cover;
 }
+
+.services-item__description-box {
+  padding-top: 40px;
+  padding-left: 40px;
+  width: 100%;
+  height: 283px;
+  background-color: #191c19;
+  border-radius: 30px;
+}
+
+.services-item__title {
+  margin-bottom: 15px;
+}
+
+.title_color-green {
+  color: #1bff07;
+}
+
+.text_normal-paragraph {
+  width: 749px;
+}
