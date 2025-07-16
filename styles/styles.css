@@ -378,3 +378,14 @@ body {
 .competencies {
   margin-bottom: 150px;
 }
+
+/* ======================
+  7 Секция услуги - services
+========================= */
+.services__heading {
+  margin-bottom: 74px;
+}
+
+.heading_short-title {
+  width: 403px;
+}
