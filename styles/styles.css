@@ -421,3 +421,19 @@ body {
 .text_normal-paragraph {
   width: 749px;
 }
+
+.text_short-paragraph {
+  width: 724px;
+}
+
+.services-item__turnkey-website {
+  margin-bottom: 74px;
+}
+
+.services-item__website-layout {
+  margin-bottom: 137px;
+}
+
+.services {
+  margin-bottom: 150px;
+}
