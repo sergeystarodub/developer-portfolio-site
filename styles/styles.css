@@ -231,6 +231,8 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  /* добавил чтобы были закругления при изменении размера окна браузера */
+  border-radius: 30px;
 }
 
 .projects-item__background_project-realhome {
