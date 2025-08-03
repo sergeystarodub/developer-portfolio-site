@@ -388,6 +388,10 @@ body {
   margin-bottom: 74px;
 }
 
+.services-item {
+  width: 100%;
+}
+
 .heading_short-title {
   width: 403px;
 }
