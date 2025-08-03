@@ -406,12 +406,17 @@ body {
 }
 
 .services-item__description-box {
-  padding-top: 40px;
-  padding-left: 40px;
+  padding: 40px 62px 40px 40px;
   width: 100%;
-  height: 283px;
+  /* если просто height то текст налазит */
+  /* height: 283px; */
+  min-height: 283px;
   background-color: #191c19;
   border-radius: 30px;
+}
+
+.services-item__description-box_padding-bottom-large {
+  padding-bottom: 69px;
 }
 
 .services-item__title {
