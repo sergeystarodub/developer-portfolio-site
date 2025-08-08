@@ -359,7 +359,7 @@ body {
 /* БЭМ-блок параграфа */
 /* color уже задан в body */
 .text {
-  width: 778px;
+  max-width: 778px;
   font-size: 22px;
   line-height: 29px;
 }
@@ -432,11 +432,11 @@ body {
 }
 
 .text_normal-paragraph {
-  width: 749px;
+  max-width: 749px;
 }
 
 .text_short-paragraph {
-  width: 724px;
+  max-width: 724px;
 }
 
 .services__turnkey-website {
