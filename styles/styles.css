@@ -384,6 +384,10 @@ body {
 /* ======================
   7 Секция услуги - services
 ========================= */
+.services {
+  margin-bottom: 150px;
+}
+
 .services__heading {
   margin-bottom: 74px;
 }
@@ -392,8 +396,12 @@ body {
   width: 100%;
 }
 
-.heading_short-title {
-  width: 403px;
+.services__turnkey-website {
+  margin-bottom: 74px;
+}
+
+.services__website-layout {
+  margin-bottom: 137px;
 }
 
 .services-item__image-wrapper {
@@ -427,6 +435,10 @@ body {
   margin-bottom: 15px;
 }
 
+.heading_short-title {
+  width: 403px;
+}
+
 .title_color-green {
   color: #1bff07;
 }
@@ -439,14 +451,5 @@ body {
   max-width: 724px;
 }
 
-.services__turnkey-website {
-  margin-bottom: 74px;
-}
 
-.services__website-layout {
-  margin-bottom: 137px;
-}
 
-.services {
-  margin-bottom: 150px;
-}
