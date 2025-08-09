@@ -394,13 +394,19 @@ body {
 
 .services-item {
   width: 100%;
-}
-
-.services__turnkey-website {
   margin-bottom: 74px;
+
 }
 
-.services__website-layout {
+.services-item:last-child {
+  margin-bottom: 0;
+}
+/* если все верно потом удалить */
+/* .services__turnkey-website {
+  margin-bottom: 74px;
+} */
+
+.services-item_type_website-layout {
   margin-bottom: 137px;
 }
 
@@ -436,18 +442,18 @@ body {
 }
 
 .heading_short-title {
-  width: 403px;
+  max-width: 403px;
 }
 
 .title_color-green {
   color: #1bff07;
 }
 
-.text_normal-paragraph {
+.text_size_normal {
   max-width: 749px;
 }
 
-.text_short-paragraph {
+.text_size_short {
   max-width: 724px;
 }
 
