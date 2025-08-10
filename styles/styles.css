@@ -332,7 +332,6 @@ body {
 
 .competencies-item__heading-wrapper_icon-type-one::before {
   background-image: url("../resources/competencies-icons/competencies-icons-one.png");
-  
 }
 
 .competencies-item__heading-wrapper_icon-type-two::before {
@@ -395,24 +394,17 @@ body {
 .services-item {
   width: 100%;
   margin-bottom: 74px;
-
 }
 
 .services-item:last-child {
   margin-bottom: 0;
 }
-/* если все верно потом удалить */
-/* .services__turnkey-website {
-  margin-bottom: 74px;
-} */
-
-.services-item_type_website-layout {
-  margin-bottom: 137px;
-}
 
 .services-item__image-wrapper {
   height: 200px;
   border-radius: 30px;
+  /* использую чтобы в services-item__image не писать border-radius: 30px */
+  overflow: hidden;
 }
 
 .services-item__image {
@@ -420,7 +412,8 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 30px;
+  /* тут уже не нужно закоментил */
+  /* border-radius: 30px; */
 }
 
 .services-item__description-box {
@@ -433,12 +426,16 @@ body {
   border-radius: 30px;
 }
 
-.services-item__description-box_extra-padding {
-  padding-bottom: 69px;
-}
-
 .services-item__title {
   margin-bottom: 15px;
+}
+
+.services-item_type_website-layout {
+  margin-bottom: 137px;
+}
+
+.services-item__description-box_extra-padding {
+  padding-bottom: 69px;
 }
 
 .heading_short-title {
@@ -456,6 +453,3 @@ body {
 .text_size_short {
   max-width: 724px;
 }
-
-
-
