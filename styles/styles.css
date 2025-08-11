@@ -458,18 +458,21 @@ body {
   8 Секция контакты - contacts
 ========================= */
 .contacts {
-  position: relative;
   min-height: 717px;
   background-color: #191c19;
   
 }
 
 /* примерно накидал потом доделать */
-
+/* решил изображение позиционировать относительно контейнера - чтобы на больших экранах не уезжало */
+.contacts__container {
+  position: relative;
+}
 .contacts__image-wrapper {
   /* display: block; */
   position: absolute;
-  right: 0;
+  /* после pixel perfect */
+  right: -111px;
   
   /* width: 727px; */
 }
