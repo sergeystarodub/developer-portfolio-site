@@ -453,3 +453,24 @@ body {
 .text_size_short {
   max-width: 724px;
 }
+
+/* ======================
+  8 Секция контакты - contacts
+========================= */
+.contacts {
+  position: relative;
+  min-height: 717px;
+  background-color: #191c19;
+  
+}
+
+/* примерно накидал потом доделать */
+
+.contacts__image-wrapper {
+  /* display: block; */
+  position: absolute;
+  right: 0;
+  
+  /* width: 727px; */
+}
+
