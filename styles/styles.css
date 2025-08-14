@@ -231,6 +231,8 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  /* добавил чтобы были закругления при изменении размера окна браузера */
+  border-radius: 30px;
 }
 
 .projects-item__background_project-realhome {
@@ -330,7 +332,6 @@ body {
 
 .competencies-item__heading-wrapper_icon-type-one::before {
   background-image: url("../resources/competencies-icons/competencies-icons-one.png");
-  
 }
 
 .competencies-item__heading-wrapper_icon-type-two::before {
@@ -357,7 +358,7 @@ body {
 /* БЭМ-блок параграфа */
 /* color уже задан в body */
 .text {
-  width: 778px;
+  max-width: 778px;
   font-size: 22px;
   line-height: 29px;
 }
@@ -378,3 +379,101 @@ body {
 .competencies {
   margin-bottom: 150px;
 }
+
+/* ======================
+  7 Секция услуги - services
+========================= */
+.services {
+  margin-bottom: 150px;
+}
+
+.services__heading {
+  margin-bottom: 74px;
+}
+
+.services-item {
+  width: 100%;
+  margin-bottom: 74px;
+}
+
+.services-item:last-child {
+  margin-bottom: 0;
+}
+
+.services-item__image-wrapper {
+  height: 200px;
+  border-radius: 30px;
+  /* использую чтобы в services-item__image не писать border-radius: 30px */
+  overflow: hidden;
+}
+
+.services-item__image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* тут уже не нужно закоментил */
+  /* border-radius: 30px; */
+}
+
+.services-item__description-box {
+  padding: 40px 62px 40px 40px;
+  width: 100%;
+  /* если просто height то текст налазит */
+  /* height: 283px; */
+  min-height: 283px;
+  background-color: #191c19;
+  border-radius: 30px;
+}
+
+.services-item__title {
+  margin-bottom: 15px;
+}
+
+.services-item_margin-big {
+  margin-bottom: 137px;
+}
+
+.services-item__description-box_extra-padding {
+  padding-bottom: 69px;
+}
+
+.services__heading_short-title {
+  max-width: 403px;
+}
+
+.title_color-green {
+  color: #1bff07;
+}
+
+.text_size_normal {
+  max-width: 749px;
+}
+
+.text_size_short {
+  max-width: 724px;
+}
+
+/* ======================
+  8 Секция контакты - contacts
+========================= */
+.contacts {
+  min-height: 717px;
+  background-color: #191c19;
+  
+}
+
+/* примерно накидал потом доделать */
+/* решил изображение позиционировать относительно контейнера - чтобы на больших экранах не уезжало */
+.contacts__container {
+  position: relative;
+}
+.contacts__image-wrapper {
+  /* display: block; */
+  position: absolute;
+  /* после pixel perfect */
+  right: -111px;
+  
+  /* width: 727px; */
+}
+
