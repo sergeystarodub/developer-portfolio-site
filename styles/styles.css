@@ -458,11 +458,9 @@ body {
   8 Секция контакты - contacts
 ========================= */
 .contacts {
-  /* потом удалить */
-  /* padding: 320px 0 89px; */
+  margin-bottom: 150px;
   min-height: 717px;
   background-color: #191c19;
-  
 }
 
 /* примерно накидал потом доделать */
@@ -473,27 +471,39 @@ body {
   min-height: 717px;
 }
 
-/* пробовал первый способ - потом удалить */
-/* .contacts__left-wrapper {
-  display: inline-block;
-  padding: 320px 0 89px;
-  
-  max-width: 310px;
-  min-height: 717px;
-  background: red;
-} */
-
 .contacts__box-wrapper {
   position: absolute;
   bottom: 89px;
   width: 310px;
+}
+
+.contacts__title {
+  margin-bottom: 28px;
+  font-size: 35px;
+  line-height: 60px;
+}
+
+.contacts__list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contacts__link {
+  font-size: 60px;
+  line-height: 60px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.contacts__link:hover {
+  color: #1bff07;
 }
 .contacts__image-wrapper {
   /* display: inline-block; */
   position: absolute;
   /* после pixel perfect */
   right: -111px;
-  
+
   /* width: 727px; */
 }
-
