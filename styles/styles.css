@@ -459,8 +459,12 @@ body {
 ========================= */
 .contacts {
   margin-bottom: 150px;
-  min-height: 717px;
+  /* пока убрал иначе при уменьшении у contacts__container background-color остается*/
+  /* min-height: 717px; */
   background-color: #191c19;
+  border-radius: 30px;
+  /* чтобы при ширине экрана меньше 1400px (width: 1400px - ширина макета) к изображению справа применялось закругление как в макете */
+  overflow: hidden;
 }
 
 /* примерно накидал потом доделать */
@@ -500,10 +504,17 @@ body {
   color: #1bff07;
 }
 .contacts__image-wrapper {
-  /* display: inline-block; */
   position: absolute;
   /* после pixel perfect */
   right: -111px;
-
+  /* не стал ограничивать пока width жестким размером-чтобы при возможном увеличении секции contacts изображение изменялось пропорционально своей width и height*/
   /* width: 727px; */
+  height: 100%;
+}
+
+.contacts__image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
