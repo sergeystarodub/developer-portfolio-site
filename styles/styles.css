@@ -518,3 +518,36 @@ body {
   height: 100%;
   object-fit: cover;
 }
+
+/* ======================
+  9 Секция футер - footer
+========================= */
+.footer {
+  font-family: "Manrope", sans-serif;
+  padding: 76px 0 24px;
+  background-color: #fff;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  /* пока закоментил - высота и так выдерживается */
+  /* min-height: 223px; */
+
+}
+
+.footer__container {
+  display: flex;
+  flex-direction: column;
+  gap: 66px;
+}
+
+.footer__title {
+  font-size: 22px;
+  line-height: 30px;
+  color: #000;
+}
+
+.footer__text {
+  font-size: 20px;
+  line-height: 27px;
+  color: #000;
+  opacity: 0.5;
+}
