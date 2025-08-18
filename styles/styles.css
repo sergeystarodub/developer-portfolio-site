@@ -543,13 +543,13 @@ body {
   gap: 66px;
 }
 
-.footer__title {
+.footer__text {
   font-size: 22px;
   line-height: 30px;
   color: #000;
 }
 
-.footer__text {
+.footer__copyright {
   font-size: 20px;
   line-height: 27px;
   color: #000;
