@@ -8,6 +8,10 @@
   letter-spacing: -0.03em;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "IBM Plex Mono", sans-serif;
   width: 100%;
