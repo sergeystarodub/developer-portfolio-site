@@ -158,6 +158,7 @@ body {
   text-align: center;
   text-decoration: none;
   color: #fff;
+  transition: color 0.3s;
 }
 
 .nav-menu__link:hover {
@@ -283,6 +284,7 @@ body {
   text-decoration: none;
   color: #000;
   cursor: pointer;
+  transition: color 0.3s;
 }
 
 .projects__btn:hover {
@@ -501,6 +503,7 @@ body {
   line-height: 60px;
   color: #fff;
   text-decoration: none;
+  transition: color 0.3s;
 }
 
 .contacts__link:hover {
@@ -521,6 +524,11 @@ body {
   height: 100%;
   object-fit: cover;
 }
+
+/* заменить жесткие значения на адаптивные при верстке responsive */
+/* right: -111px;
+bottom: 89px;
+width: 310px; */
 
 /* ======================
   9 Секция футер - footer
