@@ -327,8 +327,11 @@ body {
   display: block;
   position: absolute;
   left: 0px;
+  /* высчитал как 44px - высота иконки плюс 16px - отступ и еще знак минуса */
+  top: -60px;
+  /* так вылазит баг -при сужении экрана иконка налазит на заголовок */
   /* высчитал как 46px - высота текста плюс 16 - отступ */
-  bottom: 62px;
+  /* bottom: 62px; */
   width: 45px;
   height: 44px;
   background-repeat: no-repeat;
@@ -353,8 +356,11 @@ body {
 }
 
 .competencies-item__heading-wrapper_offset-bottom-small::before {
+  /* высчитал как 44px - высота иконки плюс 12px - отступ и еще знак минуса */
+  top: -56px;
+  /* так может быть баг если заголовок будет не во одну строку иконка на него налезет */
   /* высчитал как 46px - высота текста плюс 12 - отступ */
-  bottom: 58px;
+  /* bottom: 58px; */
 }
 
 .heading_short-text {
