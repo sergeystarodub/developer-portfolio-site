@@ -364,7 +364,7 @@ body {
 }
 
 .heading_short-text {
-  width: 651px;
+  max-width: 651px;
 }
 
 /* БЭМ-блок параграфа */
