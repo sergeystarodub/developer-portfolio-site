@@ -229,6 +229,12 @@ body {
   border-radius: 30px;
 }
 
+/* чтобы не применялся цвет к ссылке - тексту */
+.projects-item__link {
+  color: currentColor;
+  text-decoration: none;
+}
+
 .projects-item__background {
   position: relative;
   width: 100%;
