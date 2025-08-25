@@ -71,6 +71,10 @@ body {
   justify-content: space-between;
   align-items: flex-start;
   height: 55px;
+  /* после pixel perfect */
+  position: relative;
+  left: -2px;
+  width: 1153px;
 }
 
 /* первый варинт логотипа - закоментил - сделал вторым вариантом*/
@@ -139,7 +143,9 @@ body {
 .nav-menu__list {
   display: flex;
   flex-direction: row;
-  gap: 50px;
+  /* gap: 50px; */
+  /* после pixel perfect */
+  gap: 51px;
 }
 
 /* до использования флексбокса */
@@ -217,6 +223,9 @@ body {
 
 .projects__title {
   margin-bottom: 40px;
+  /* после pixel perfect */
+  position: relative;
+  left: -5px;
 }
 
 .projects-list {
@@ -291,6 +300,9 @@ body {
   color: #000;
   cursor: pointer;
   transition: color 0.3s;
+  /* после pixel perfect */
+  position: relative;
+  left: -2px;
 }
 
 .projects__btn:hover {
@@ -312,12 +324,27 @@ body {
 ========================= */
 .competencies__title {
   margin-bottom: 104px;
+  /* после pixel perfect */
+  position: relative;
+  left: -2px;
 }
 
 /* это не нужно */
 /* .competencies-item__heading {
   margin-bottom: 15px;
 } */
+
+.competencies-item__heading {
+  /* после pixel perfect */
+  position: relative;
+  left: -2px;
+}
+
+.competencies-item__text {
+  /* после pixel perfect */
+  position: relative;
+  left: -2px;
+}
 
 .heading_color-green {
   color: #1bff07;
@@ -371,6 +398,15 @@ body {
 
 .heading_short-text {
   max-width: 651px;
+  /* после pixel perfect */
+  position: relative;
+  left: -1px;
+}
+
+.text_positioned {
+  /* после pixel perfect */
+  position: relative;
+  left: -1px;
 }
 
 /* БЭМ-блок параграфа */
@@ -381,10 +417,11 @@ body {
   line-height: 29px;
 }
 
-.competencies-item__heading-wrapper_offset-bottom-large::before {
-  /* высчитал как 92px - высота текста плюс 16 - отступ */
+/* уже не надо переделал в .competencies-item__heading-wrapper::before*/
+/* высчитал как 92px - высота текста плюс 16 - отступ */
+/* .competencies-item__heading-wrapper_offset-bottom-large::before {
   bottom: 108px;
-}
+} */
 
 .competencies-item {
   margin-bottom: 120px;
