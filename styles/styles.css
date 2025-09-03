@@ -236,37 +236,30 @@ body {
 
 .projects-item {
   width: 100%;
-  height: 550px;
-  border-radius: 30px;
+  /* height: 550px;
+  border-radius: 30px; */
 }
 
 /* чтобы не применялся цвет к ссылке - тексту */
 .projects-item__link {
+  position: relative;
+  display: block;
   color: currentColor;
   text-decoration: none;
 }
 
-.projects-item__background {
-  position: relative;
+.projects-item__image-wrapper {
+  height: 550px;
+  border-radius: 30px;
+  /* использую чтобы в projects-item__image не писать border-radius: 30px */
+  overflow: hidden;
+}
+
+.projects-item__image {
+  display: block;
   width: 100%;
   height: 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  /* добавил чтобы были закругления при изменении размера окна браузера */
-  border-radius: 30px;
-}
-
-.projects-item__background_project-realhome {
-  background-image: url("../resources/projects-image/Realhome-image.png");
-}
-
-.projects-item__background_project-glass {
-  background-image: url("../resources/projects-image/Glass-image.png");
-}
-
-.projects-item__background_project-fesiyen {
-  background-image: url("../resources/projects-image/Fesiyen-image.png");
+  object-fit: cover;
 }
 
 .projects-item__box {
@@ -535,7 +528,6 @@ body {
   /* для того чтобы был виден контейнер при наведении */
   /* с падингами пока не нужен */
   /* min-height: 717px; */
-
 }
 
 /* закоментил - исправляю */
