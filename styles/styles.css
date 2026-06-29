@@ -212,19 +212,20 @@ body {
 /* ======================
   5 Секция проекты - projects
 ========================= */
-/* В макете встречаются элементы - некоторые заголовки и параграфы,
-которые имеют одинаковые CSS свойства, поэтому им буду задавать класс-блок по БЭМ для повторного использования
-и дополнительный класс для расположения - внешней геометрии - то есть микс по БЭМ */
 
+
+/* потом удалить обязательно когда поменяю классы */
 /* БЭМ-блок заголовка */
 /* color уже задан в body */
-.title {
+/* .title {
   font-size: 55px;
   line-height: 72px;
-}
+} */
 
 .projects__title {
   margin-bottom: 40px;
+  font-size: 55px;
+  line-height: 72px;
   /* после pixel perfect */
   position: relative;
   left: -5px;
@@ -268,13 +269,16 @@ body {
   bottom: 50px;
 }
 
-.heading {
+/* потом удалить обязательно когда поменяю классы */
+/* .heading {
   font-size: 35px;
   line-height: 46px;
-}
+} */
 
 .projects-item__heading {
   margin-bottom: 5px;
+  font-size: 35px;
+  line-height: 46px;
 }
 
 .projects-item__desc {
@@ -319,6 +323,8 @@ body {
 ========================= */
 .competencies__title {
   margin-bottom: 104px;
+  font-size: 55px;
+  line-height: 72px;
   /* после pixel perfect */
   position: relative;
   left: -2px;
@@ -330,20 +336,27 @@ body {
 } */
 
 .competencies-item__heading {
+  font-size: 35px;
+  line-height: 46px;
+  color: #1bff07;
   /* после pixel perfect */
   position: relative;
   left: -2px;
 }
 
 .competencies-item__text {
+  max-width: 778px;
+  font-size: 22px;
+  line-height: 29px;
   /* после pixel perfect */
   position: relative;
   left: -2px;
 }
 
-.heading_color-green {
+/* потом удалить обязательно когда поменяю классы */
+/* .heading_color-green {
   color: #1bff07;
-}
+} */
 
 .competencies-item__heading-wrapper {
   position: relative;
@@ -404,13 +417,14 @@ body {
   left: -1px;
 }
 
+/* потом удалить обязательно когда поменяю классы */
 /* БЭМ-блок параграфа */
 /* color уже задан в body */
-.text {
+/* .text {
   max-width: 778px;
   font-size: 22px;
   line-height: 29px;
-}
+} */
 
 /* уже не надо переделал в .competencies-item__heading-wrapper::before*/
 /* высчитал как 92px - высота текста плюс 16 - отступ */
@@ -439,6 +453,8 @@ body {
 
 .services__heading {
   margin-bottom: 74px;
+  font-size: 35px;
+  line-height: 46px;
 }
 
 .services-item {
@@ -478,6 +494,15 @@ body {
 
 .services-item__title {
   margin-bottom: 15px;
+  font-size: 55px;
+  line-height: 72px;
+  color: #1bff07;
+}
+
+.services-item__text {
+  max-width: 749px;
+  font-size: 22px;
+  line-height: 29px;
 }
 
 .services-item_margin-big {
@@ -492,15 +517,17 @@ body {
   max-width: 403px;
 }
 
-.title_color-green {
+/* потом удалить обязательно когда поменяю классы */
+/* .title_color-green {
   color: #1bff07;
-}
+} */
 
-.text_size_normal {
+/* потом удалить обязательно когда поменяю классы */
+/* .text_size_normal {
   max-width: 749px;
-}
+} */
 
-.text_size_short {
+.text_size-short {
   max-width: 724px;
 }
 
