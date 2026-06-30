@@ -44,16 +44,18 @@
             <nav class="nav-menu">
               <ul class="nav-menu__list">
                 <li class="nav-menu__item">
-                  <a class="nav-menu__link" href="#">портфолио</a>
+                  <a class="nav-menu__link" href="#projects-id">портфолио</a>
                 </li>
                 <li class="nav-menu__item">
-                  <a class="nav-menu__link" href="#">компетенции</a>
+                  <a class="nav-menu__link" href="#competencies-id"
+                    >компетенции</a
+                  >
                 </li>
                 <li class="nav-menu__item">
-                  <a class="nav-menu__link" href="#">услуги</a>
+                  <a class="nav-menu__link" href="#services-id">услуги</a>
                 </li>
                 <li class="nav-menu__item">
-                  <a class="nav-menu__link" href="#">контакты</a>
+                  <a class="nav-menu__link" href="#contacts-id">контакты</a>
                 </li>
               </ul>
             </nav>
@@ -77,60 +79,75 @@
     <!-- Основной контент страницы -->
     <main>
       <!-- Секция проекты -->
-      <section class="projects">
+      <section id="projects-id" class="projects">
         <div class="container">
-          <h2 class="title projects__title">Самые свежие проекты</h2>
+          <h2 class="projects__title">Самые свежие проекты</h2>
           <ul class="projects-list">
             <li class="projects-item">
-              <div
-                class="projects-item__background projects-item__background_project-realhome"
-              >
+              <a class="projects-item__link" href="#">
+                <div class="projects-item__image-wrapper">
+                  <img
+                    class="projects-item__image"
+                    src="resources/projects-image/Realhome-image.png"
+                    alt="Изображение проекта Realhome, небоскреб"
+                  />
+                </div>
                 <div class="projects-item__box">
-                  <h3 class="projects-item__heading heading">Realhome</h3>
+                  <h3 class="projects-item__heading">Realhome</h3>
                   <p class="projects-item__desc">дизайн,верстка, настройка</p>
                 </div>
-              </div>
+              </a>
             </li>
             <li class="projects-item">
-              <div
-                class="projects-item__background projects-item__background_project-glass"
-              >
+              <a class="projects-item__link" href="#">
+                <div class="projects-item__image-wrapper">
+                  <img
+                    class="projects-item__image"
+                    src="resources/projects-image/Glass-image.png"
+                    alt="Изображение проекта Glass, страницы сайтов"
+                  />
+                </div>
                 <div class="projects-item__box">
-                  <h3 class="projects-item__heading heading">GLASS</h3>
+                  <h3 class="projects-item__heading">GLASS</h3>
                   <p class="projects-item__desc">разработка интерфейса</p>
                 </div>
-              </div>
+              </a>
             </li>
             <li class="projects-item">
-              <div
-                class="projects-item__background projects-item__background_project-fesiyen"
-              >
+              <a class="projects-item__link" href="#">
+                <div class="projects-item__image-wrapper">
+                  <img
+                    class="projects-item__image"
+                    src="resources/projects-image/Fesiyen-image.png"
+                    alt="Изображение проекта Fesiyen, сайт"
+                  />
+                </div>
                 <div class="projects-item__box">
-                  <h3 class="projects-item__heading heading">Fesiyen</h3>
+                  <h3 class="projects-item__heading">Fesiyen</h3>
                   <p class="projects-item__desc">разработка интерфейса</p>
                 </div>
-              </div>
+              </a>
             </li>
           </ul>
           <a class="projects__btn" href="#">Смотреть все проекты</a>
         </div>
       </section>
       <!-- Секция компетенции -->
-      <section class="competencies">
+      <section id="competencies-id" class="competencies">
         <div class="container">
-          <h2 class="title competencies__title">Мои компетенции</h2>
+          <h2 class="competencies__title">Мои компетенции</h2>
           <ul class="competencies-list">
             <li class="competencies-item">
               <div
                 class="competencies-item__heading-wrapper competencies-item__heading-wrapper_icon-type-one competencies-item__heading-wrapper_offset-bottom-small"
               >
                 <h3
-                  class="heading competencies-item__heading heading_color-green"
+                  class="competencies-item__heading"
                 >
                   HTML и CSS
                 </h3>
               </div>
-              <p class="text competencies-item__text">
+              <p class="competencies-item__text">
                 это основа фронтенд разработки. Умение создавать и правильно
                 структурировать HTML-документы, а также применять стили к этим
                 документам на CSS, является обязательным навыком для каждого
@@ -142,12 +159,12 @@
                 class="competencies-item__heading-wrapper competencies-item__heading-wrapper_icon-type-two"
               >
                 <h3
-                  class="heading competencies-item__heading heading_color-green"
+                  class="competencies-item__heading"
                 >
                   JavaScript
                 </h3>
               </div>
-              <p class="text competencies-item__text">
+              <p class="competencies-item__text">
                 это язык программирования, который используется для создания
                 динамического и интерактивного пользовательского интерфейса.
                 Хороший фронтенд разработчик должен быть знаком с основами
@@ -160,12 +177,12 @@
                 class="competencies-item__heading-wrapper competencies-item__heading-wrapper_icon-type-three"
               >
                 <h3
-                  class="heading competencies-item__heading heading_color-green"
+                  class="competencies-item__heading"
                 >
                   Работа с библиотеками и фреймворками
                 </h3>
               </div>
-              <p class="text competencies-item__text">
+              <p class="competencies-item__text">
                 фронтенд разработчики должны быть знакомы с различными
                 библиотеками и фреймворками, такими как React, Angular, Vue и
                 другими. Умение использовать готовые решения, адаптировать их
@@ -178,12 +195,12 @@
                 class="competencies-item__heading-wrapper competencies-item__heading-wrapper_icon-type-four competencies-item__heading-wrapper_offset-bottom-large"
               >
                 <h3
-                  class="heading competencies-item__heading heading_color-green heading_short-text"
+                  class="competencies-item__heading heading_short-text"
                 >
                   Разработка для мобильных устройств и адаптивная верстка
                 </h3>
               </div>
-              <p class="text competencies-item__text">
+              <p class="competencies-item__text text_positioned">
                 фронтенд разработчики должны быть знакомы с различными
                 библиотеками и фреймворками, такими как React, Angular, Vue и
                 другими. Умение использовать готовые решения, адаптировать их
@@ -195,9 +212,9 @@
         </div>
       </section>
       <!-- Секция услуги -->
-      <section class="services">
+      <section id="services-id" class="services">
         <div class="container">
-          <h2 class="heading services__heading services__heading_short-title">
+          <h2 class="services__heading services__heading_short-title">
             Помогаю реализовать широкий спектр задач
           </h2>
           <ul class="services-list">
@@ -210,10 +227,10 @@
                 />
               </div>
               <div class="services-item__description-box">
-                <h3 class="title services-item__title title_color-green">
+                <h3 class="services-item__title">
                   Разработка сайта под ключ
                 </h3>
-                <p class="text text_size_normal">
+                <p class="services-item__text">
                   Это создание дизайн веб-сайтов, созданный для удобства
                   пользователя и решения бизнес-задач <br />Сайты должны быть
                   понятными и удобными, ведь чем понятнее сайт, тем быстрее
@@ -232,10 +249,10 @@
               <div
                 class="services-item__description-box services-item__description-box_extra-padding"
               >
-                <h3 class="title services-item__title title_color-green">
+                <h3 class="services-item__title">
                   Верстка сайтов
                 </h3>
-                <p class="text text_size_normal">
+                <p class="services-item__text">
                   Это процесс создания HTML-документов и применения к ним стилей
                   на CSS. Фронтенд разработчик может помочь создать
                   привлекательный и удобный интерфейс для вашего сайта
@@ -251,10 +268,10 @@
                 />
               </div>
               <div class="services-item__description-box">
-                <h3 class="title services-item__title title_color-green">
+                <h3 class="services-item__title">
                   Разработка мобильного интерфейса
                 </h3>
-                <p class="text text_size_short">
+                <p class="services-item__text text_size-short">
                   Это процесс создания интерактивных элементов на странице с
                   помощью JavaScript. Фронтенд разработчик может помочь создать
                   динамический и удобный пользовательский интерфейс для вашего
@@ -266,19 +283,41 @@
         </div>
       </section>
       <!-- Секция контакты -->
-      <section class="contacts">
+      <section id="contacts-id" class="contacts">
         <div class="container contacts__container">
-          <div class="contacts__image-wrapper">
-            <img class="contacts__image"
+          <div class="contacts__box-wrapper">
+            <p class="contacts__title">для связи:</p>
+            <ul class="contacts__list">
+              <li class="contacts__item">
+                <a class="contacts__link" href="#">instagram</a>
+              </li>
+              <li class="contacts__item">
+                <a class="contacts__link" href="#">telegram</a>
+              </li>
+              <li class="contacts__item">
+                <a class="contacts__link" href="mailto:sasha@mail.com">mail</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- исправляю -потом удалить -->
+          <!-- <div class="contacts__image-wrapper">
+            <img
+              class="contacts__image"
               src="resources/contacts-image/image-programmer.png"
               alt="Изображение программиста за компьютером"
             />
-          </div>
+          </div> -->
         </div>
       </section>
     </main>
     <!-- в футере использовать шрифт "Manrope" - смотри свойства -->
-    <!-- Подвал -->
-    <!-- <footer></footer> -->
+    <!-- Подвал-футер -->
+    <footer class="footer">
+      <div class="container footer__container">
+        <p class="footer__description">Портфолио фронтенд-разработчика Саши Орлова</p>
+        <p class="footer__copyright">Все права защищены. 2026</p>
+      </div>
+    </footer>
   </body>
 </html>

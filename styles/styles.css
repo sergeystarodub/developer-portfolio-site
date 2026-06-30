@@ -8,6 +8,10 @@
   letter-spacing: -0.03em;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "IBM Plex Mono", sans-serif;
   width: 100%;
@@ -67,6 +71,10 @@ body {
   justify-content: space-between;
   align-items: flex-start;
   height: 55px;
+  /* после pixel perfect */
+  position: relative;
+  left: -2px;
+  width: 1153px;
 }
 
 /* первый варинт логотипа - закоментил - сделал вторым вариантом*/
@@ -135,7 +143,9 @@ body {
 .nav-menu__list {
   display: flex;
   flex-direction: row;
-  gap: 50px;
+  /* gap: 50px; */
+  /* после pixel perfect */
+  gap: 51px;
 }
 
 /* до использования флексбокса */
@@ -154,6 +164,7 @@ body {
   text-align: center;
   text-decoration: none;
   color: #fff;
+  transition: color 0.3s;
 }
 
 .nav-menu__link:hover {
@@ -168,6 +179,8 @@ body {
   /* для визуального контроля - потом закоментить */
   /* height: 683px;
   border: 1px solid red; */
+  /* чтобы при наведении был виден контейнер */
+  min-height: 683px;
 }
 
 .hero__desc {
@@ -199,19 +212,23 @@ body {
 /* ======================
   5 Секция проекты - projects
 ========================= */
-/* В макете встречаются элементы - некоторые заголовки и параграфы,
-которые имеют одинаковые CSS свойства, поэтому им буду задавать класс-блок по БЭМ для повторного использования
-и дополнительный класс для расположения - внешней геометрии - то есть микс по БЭМ */
 
+
+/* потом удалить обязательно когда поменяю классы */
 /* БЭМ-блок заголовка */
 /* color уже задан в body */
-.title {
+/* .title {
   font-size: 55px;
   line-height: 72px;
-}
+} */
 
 .projects__title {
   margin-bottom: 40px;
+  font-size: 55px;
+  line-height: 72px;
+  /* после pixel perfect */
+  position: relative;
+  left: -5px;
 }
 
 .projects-list {
@@ -220,31 +237,30 @@ body {
 
 .projects-item {
   width: 100%;
+  /* height: 550px;
+  border-radius: 30px; */
+}
+
+/* чтобы не применялся цвет к ссылке - тексту */
+.projects-item__link {
+  position: relative;
+  display: block;
+  color: currentColor;
+  text-decoration: none;
+}
+
+.projects-item__image-wrapper {
   height: 550px;
   border-radius: 30px;
+  /* использую чтобы в projects-item__image не писать border-radius: 30px */
+  overflow: hidden;
 }
 
-.projects-item__background {
-  position: relative;
+.projects-item__image {
+  display: block;
   width: 100%;
   height: 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  /* добавил чтобы были закругления при изменении размера окна браузера */
-  border-radius: 30px;
-}
-
-.projects-item__background_project-realhome {
-  background-image: url("../resources/projects-image/Realhome-image.png");
-}
-
-.projects-item__background_project-glass {
-  background-image: url("../resources/projects-image/Glass-image.png");
-}
-
-.projects-item__background_project-fesiyen {
-  background-image: url("../resources/projects-image/Fesiyen-image.png");
+  object-fit: cover;
 }
 
 .projects-item__box {
@@ -253,13 +269,16 @@ body {
   bottom: 50px;
 }
 
-.heading {
+/* потом удалить обязательно когда поменяю классы */
+/* .heading {
   font-size: 35px;
   line-height: 46px;
-}
+} */
 
 .projects-item__heading {
   margin-bottom: 5px;
+  font-size: 35px;
+  line-height: 46px;
 }
 
 .projects-item__desc {
@@ -279,6 +298,10 @@ body {
   text-decoration: none;
   color: #000;
   cursor: pointer;
+  transition: color 0.3s;
+  /* после pixel perfect */
+  position: relative;
+  left: -2px;
 }
 
 .projects__btn:hover {
@@ -300,6 +323,11 @@ body {
 ========================= */
 .competencies__title {
   margin-bottom: 104px;
+  font-size: 55px;
+  line-height: 72px;
+  /* после pixel perfect */
+  position: relative;
+  left: -2px;
 }
 
 /* это не нужно */
@@ -307,9 +335,28 @@ body {
   margin-bottom: 15px;
 } */
 
-.heading_color-green {
+.competencies-item__heading {
+  font-size: 35px;
+  line-height: 46px;
   color: #1bff07;
+  /* после pixel perfect */
+  position: relative;
+  left: -2px;
 }
+
+.competencies-item__text {
+  max-width: 778px;
+  font-size: 22px;
+  line-height: 29px;
+  /* после pixel perfect */
+  position: relative;
+  left: -2px;
+}
+
+/* потом удалить обязательно когда поменяю классы */
+/* .heading_color-green {
+  color: #1bff07;
+} */
 
 .competencies-item__heading-wrapper {
   position: relative;
@@ -321,8 +368,11 @@ body {
   display: block;
   position: absolute;
   left: 0px;
+  /* высчитал как 44px - высота иконки плюс 16px - отступ и еще знак минуса */
+  top: -60px;
+  /* так вылазит баг -при сужении экрана иконка налазит на заголовок */
   /* высчитал как 46px - высота текста плюс 16 - отступ */
-  bottom: 62px;
+  /* bottom: 62px; */
   width: 45px;
   height: 44px;
   background-repeat: no-repeat;
@@ -347,26 +397,40 @@ body {
 }
 
 .competencies-item__heading-wrapper_offset-bottom-small::before {
+  /* высчитал как 44px - высота иконки плюс 12px - отступ и еще знак минуса */
+  top: -56px;
+  /* так может быть баг если заголовок будет не во одну строку иконка на него налезет */
   /* высчитал как 46px - высота текста плюс 12 - отступ */
-  bottom: 58px;
+  /* bottom: 58px; */
 }
 
 .heading_short-text {
-  width: 651px;
+  max-width: 651px;
+  /* после pixel perfect */
+  position: relative;
+  left: -1px;
 }
 
+.text_positioned {
+  /* после pixel perfect */
+  position: relative;
+  left: -1px;
+}
+
+/* потом удалить обязательно когда поменяю классы */
 /* БЭМ-блок параграфа */
 /* color уже задан в body */
-.text {
+/* .text {
   max-width: 778px;
   font-size: 22px;
   line-height: 29px;
-}
+} */
 
-.competencies-item__heading-wrapper_offset-bottom-large::before {
-  /* высчитал как 92px - высота текста плюс 16 - отступ */
+/* уже не надо переделал в .competencies-item__heading-wrapper::before*/
+/* высчитал как 92px - высота текста плюс 16 - отступ */
+/* .competencies-item__heading-wrapper_offset-bottom-large::before {
   bottom: 108px;
-}
+} */
 
 .competencies-item {
   margin-bottom: 120px;
@@ -389,6 +453,8 @@ body {
 
 .services__heading {
   margin-bottom: 74px;
+  font-size: 35px;
+  line-height: 46px;
 }
 
 .services-item {
@@ -428,6 +494,15 @@ body {
 
 .services-item__title {
   margin-bottom: 15px;
+  font-size: 55px;
+  line-height: 72px;
+  color: #1bff07;
+}
+
+.services-item__text {
+  max-width: 749px;
+  font-size: 22px;
+  line-height: 29px;
 }
 
 .services-item_margin-big {
@@ -442,15 +517,17 @@ body {
   max-width: 403px;
 }
 
-.title_color-green {
+/* потом удалить обязательно когда поменяю классы */
+/* .title_color-green {
   color: #1bff07;
-}
+} */
 
-.text_size_normal {
+/* потом удалить обязательно когда поменяю классы */
+/* .text_size_normal {
   max-width: 749px;
-}
+} */
 
-.text_size_short {
+.text_size-short {
   max-width: 724px;
 }
 
@@ -458,22 +535,110 @@ body {
   8 Секция контакты - contacts
 ========================= */
 .contacts {
-  min-height: 717px;
+  margin-bottom: 150px;
+  /* пока убрал иначе при уменьшении у contacts__container background-color остается*/
+  /* min-height: 717px; */
   background-color: #191c19;
-  
+  border-radius: 30px;
+  /* чтобы при ширине экрана меньше 1400px (width: 1400px - ширина макета) к изображению справа применялось закругление как в макете */
+  /* overflow: hidden; */
+  background-image: url("../resources/contacts-image/image-programmer.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top right;
 }
 
-/* примерно накидал потом доделать */
 /* решил изображение позиционировать относительно контейнера - чтобы на больших экранах не уезжало */
 .contacts__container {
-  position: relative;
-}
-.contacts__image-wrapper {
-  /* display: block; */
-  position: absolute;
-  /* после pixel perfect */
-  right: -111px;
-  
-  /* width: 727px; */
+  padding-top: 320px;
+  padding-bottom: 89px;
+  /* для того чтобы был виден контейнер при наведении */
+  /* с падингами пока не нужен */
+  /* min-height: 717px; */
 }
 
+/* закоментил - исправляю */
+/* .contacts__box-wrapper {
+  position: absolute;
+  bottom: 89px;
+  width: 310px;
+} */
+
+.contacts__title {
+  margin-bottom: 28px;
+  font-size: 35px;
+  line-height: 60px;
+}
+
+.contacts__list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contacts__link {
+  font-size: 60px;
+  line-height: 60px;
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.contacts__link:hover {
+  color: #1bff07;
+}
+
+/* закоментил - исправляю */
+/* .contacts__image-wrapper {
+  position: absolute;
+  после pixel perfect
+  right: -111px;
+  не стал ограничивать пока width жестким размером-чтобы при возможном увеличении секции contacts изображение изменялось пропорционально своей width и height
+  width: 727px;
+  height: 100%;
+} */
+
+/* исправляю-потом удалить */
+/* .contacts__image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+} */
+
+/* заменить жесткие значения на адаптивные при верстке responsive */
+/* right: -111px;
+bottom: 89px;
+width: 310px; */
+
+/* ======================
+  9 Секция футер - footer
+========================= */
+.footer {
+  font-family: "Manrope", sans-serif;
+  padding: 76px 0 24px;
+  background-color: #fff;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  /* пока закоментил - высота и так выдерживается */
+  /* min-height: 223px; */
+}
+
+.footer__container {
+  display: flex;
+  flex-direction: column;
+  gap: 66px;
+}
+
+.footer__description {
+  font-size: 22px;
+  line-height: 30px;
+  color: #000;
+}
+
+.footer__copyright {
+  font-size: 20px;
+  line-height: 27px;
+  color: #000;
+  opacity: 0.5;
+}
