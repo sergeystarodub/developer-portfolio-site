@@ -1,0 +1,115 @@
+/* ======================
+  6 Секция компетенции - competencies
+========================= */
+.competencies__title {
+  margin-bottom: 104px;
+  font-size: 55px;
+  line-height: 72px;
+  /* после pixel perfect */
+  position: relative;
+  left: -2px;
+}
+
+/* это не нужно */
+/* .competencies-item__heading {
+  margin-bottom: 15px;
+} */
+
+.competencies-item__heading {
+  font-size: 35px;
+  line-height: 46px;
+  color: #1bff07;
+  /* после pixel perfect */
+  position: relative;
+  left: -2px;
+}
+
+.competencies-item__text {
+  max-width: 778px;
+  font-size: 22px;
+  line-height: 29px;
+  /* после pixel perfect */
+  position: relative;
+  left: -2px;
+}
+
+
+
+.competencies-item__heading-wrapper {
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.competencies-item__heading-wrapper::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0px;
+  /* высчитал как 44px - высота иконки плюс 16px - отступ и еще знак минуса */
+  top: -60px;
+  /* так вылазит баг -при сужении экрана иконка налазит на заголовок */
+  /* высчитал как 46px - высота текста плюс 16 - отступ */
+  /* bottom: 62px; */
+  width: 45px;
+  height: 44px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.competencies-item__heading-wrapper_icon-type-one::before {
+  background-image: url("../resources/competencies-icons/competencies-icons-one.png");
+}
+
+.competencies-item__heading-wrapper_icon-type-two::before {
+  background-image: url("../resources/competencies-icons/competencies-icons-two.png");
+}
+
+.competencies-item__heading-wrapper_icon-type-three::before {
+  background-image: url("../resources/competencies-icons/competencies-icons-three.png");
+}
+
+.competencies-item__heading-wrapper_icon-type-four::before {
+  background-image: url("../resources/competencies-icons/competencies-icons-four.png");
+}
+
+.competencies-item__heading-wrapper_offset-bottom-small::before {
+  /* высчитал как 44px - высота иконки плюс 12px - отступ и еще знак минуса */
+  top: -56px;
+  /* так может быть баг если заголовок будет не во одну строку иконка на него налезет */
+  /* высчитал как 46px - высота текста плюс 12 - отступ */
+  /* bottom: 58px; */
+}
+
+.heading_short-text {
+  max-width: 651px;
+  /* после pixel perfect */
+  position: relative;
+  left: -1px;
+}
+
+.text_positioned {
+  /* после pixel perfect */
+  position: relative;
+  left: -1px;
+}
+
+
+
+/* уже не надо переделал в .competencies-item__heading-wrapper::before*/
+/* высчитал как 92px - высота текста плюс 16 - отступ */
+/* .competencies-item__heading-wrapper_offset-bottom-large::before {
+  bottom: 108px;
+} */
+
+.competencies-item {
+  margin-bottom: 120px;
+}
+
+.competencies-item:last-child {
+  margin-bottom: 0;
+}
+
+.competencies {
+  margin-bottom: 150px;
+}

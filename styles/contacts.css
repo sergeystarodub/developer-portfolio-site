@@ -1,0 +1,86 @@
+/* ======================
+  8 Секция контакты - contacts
+========================= */
+.contacts {
+  margin-bottom: 150px;
+  /* пока убрал иначе при уменьшении у contacts__container background-color остается*/
+  /* min-height: 717px; */
+  background-color: #191c19;
+  border-radius: 30px;
+  /* чтобы при ширине экрана меньше 1400px (width: 1400px - ширина макета) к изображению справа применялось закругление как в макете */
+  /* overflow: hidden; */
+  background-image: url("../resources/contacts-image/image-programmer.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top right;
+}
+
+/* решил изображение позиционировать относительно контейнера - чтобы на больших экранах не уезжало */
+/* пока закоментил - сделал падинги через contacts__box-wrapper так как разбил css код на отдельные модули и теперь свойства contacts__container перезаписываются container*/
+/* можно это решить разместив contacts__container в styles.css после container, но пока решил сделать все здесь с помощью contacts__box-wrapper*/
+/* .contacts__container {
+  padding-top: 320px;
+  padding-bottom: 89px;
+  для того чтобы был виден контейнер при наведении
+  с падингами пока не нужен min-height: 717px;
+  
+} */
+
+.contacts__box-wrapper {
+  padding-top: 320px;
+  padding-bottom: 89px;
+}
+
+/* закоментил - исправляю */
+/* .contacts__box-wrapper {
+  position: absolute;
+  bottom: 89px;
+  width: 310px;
+} */
+
+.contacts__title {
+  margin-bottom: 28px;
+  font-size: 35px;
+  line-height: 60px;
+}
+
+.contacts__list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contacts__link {
+  font-size: 60px;
+  line-height: 60px;
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.contacts__link:hover {
+  color: #1bff07;
+}
+
+/* закоментил - исправляю */
+/* .contacts__image-wrapper {
+  position: absolute;
+  после pixel perfect
+  right: -111px;
+  не стал ограничивать пока width жестким размером-чтобы при возможном увеличении секции contacts изображение изменялось пропорционально своей width и height
+  width: 727px;
+  height: 100%;
+} */
+
+/* исправляю-потом удалить */
+/* .contacts__image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+} */
+
+/* заменить жесткие значения на адаптивные при верстке responsive */
+/* right: -111px;
+bottom: 89px;
+width: 310px; */

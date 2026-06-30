@@ -1,0 +1,178 @@
+/* ======================
+  3 Hero-блок (первая секция с фоном)
+========================= */
+.hero-wrapper {
+  margin-bottom: 150px;
+  width: 100%;
+  /* добавил для устранения бага при уменьшении окна браузера */
+  min-width: 1180px;
+  height: 765px;
+  background-image: url("../resources/frontend-developer/developer-image.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/* было так раньше -потом удалить */
+/* .hero {
+  margin-bottom: 150px;
+  width: 100%;
+  добавил для устранения бага при уменьшении окна браузера
+  min-width: 1180px;
+  height: 765px;
+  background-image: url("../resources/frontend-developer/developer-image.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+} */
+
+/* ======================
+  4 Хедер (фон хедера прозрачный, он "сидит" на фоне hero-wrapper)
+========================= */
+.header {
+  padding-top: 27px;
+}
+
+/* сделал через флексбокс */
+.header__container-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: 55px;
+  /* после pixel perfect */
+  position: relative;
+  left: -2px;
+  width: 1153px;
+}
+
+/* первый варинт логотипа - закоментил - сделал вторым вариантом*/
+/* .header__logo-link {
+  margin-top: 9px;
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.header__logo {
+  width: 130px;
+  height: 39px;
+  border-radius: 100px;
+  background: #000;
+}
+
+.header__logo-text {
+  position: absolute;
+  left: 9px;
+  top: -9px;
+  width: 109px;
+  font-weight: 700;
+  font-size: 42.41px;
+  line-height: 55px;
+  letter-spacing: -0.11em;
+  text-transform: uppercase;
+  color: #1bff07;
+} */
+
+/* второй вариант логотипа */
+/* различаются размещение орлов надписи по высоте - подумать как сделать - сделал в span */
+.header__logo-link {
+  display: inline-block;
+  margin-top: 9px;
+  padding-left: 9px;
+  width: 130px;
+  border-radius: 100px;
+  background-color: #000;
+  color: #1bff07;
+  text-decoration: none;
+  font-size: 42.41px;
+  /* line-height: 55px; */
+  line-height: 39px;
+  font-weight: 700;
+  /* letter-spacing: -0.11em; */
+  cursor: pointer;
+}
+
+/* спозиционировал span - у меня надпись как бы по центру line-height: 39px в макете вверху 9 внизу 7 то есть если по центру то 8 и 8 значит у меня нужно 1px поднять снизу */
+.header__logo-span {
+  position: relative;
+  bottom: 1px;
+  letter-spacing: -0.11em;
+  text-transform: uppercase;
+}
+
+.nav-menu {
+  margin-top: 6px;
+  /* это было до флексбокса */
+  /* float: right;
+  vertical-align: top; */
+}
+
+.nav-menu__list {
+  display: flex;
+  flex-direction: row;
+  /* gap: 50px; */
+  /* после pixel perfect */
+  gap: 51px;
+}
+
+/* до использования флексбокса */
+/* .nav-menu__item {
+  display: inline-block;
+  margin-right: 50px;
+}
+
+.nav-menu__item:last-child {
+  margin-right: 0;
+} */
+
+.nav-menu__link {
+  font-size: 18px;
+  line-height: 23px;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s;
+}
+
+.nav-menu__link:hover {
+  color: #1bff07;
+}
+
+/* ======================
+  4 Элементы секции hero
+========================= */
+.hero__content-container {
+  position: relative;
+  /* для визуального контроля - потом закоментить */
+  /* height: 683px;
+  border: 1px solid red; */
+  /* чтобы при наведении был виден контейнер */
+  min-height: 683px;
+}
+
+.hero__desc {
+  position: absolute;
+  /* расстояние от хэдера */
+  top: 252px;
+  /* 15 так как падинги по бокам 15px а позиционируется от границы контейнера - то есть от 1180px */
+  left: 15px;
+  /* left 0 не нужен так как будет смещение за границы контейнера до 1180 а не 1150 пикселей */
+  width: 430px;
+  font-size: 20px;
+  line-height: 26px;
+}
+
+.hero__title {
+  position: absolute;
+  top: 384px;
+  /*left: 9px расчитал как 15-6,где 15 боковой паддинг,а 6 заезд за границу контейнера слева */
+  left: 9px;
+  width: 919px;
+  font-size: 80px;
+  line-height: 70px;
+}
+
+.hero__title_color-green {
+  color: #1bff07;
+}
