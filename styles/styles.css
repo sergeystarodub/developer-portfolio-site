@@ -38,7 +38,27 @@ body {
   max-width: 1180px;
 }
 
+/* Адаптив */
 
+@media (max-width: 1199px) {
+  .container {
+    max-width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    /* потом закоментить */
+    background-color: green;
+
+  }
+}
+
+@media (max-width: 767px) {
+  .container {
+    padding-left: 13px;
+    padding-right: 12px;
+    /* потом закоментить */
+    background-color: red;
+  }
+}
 
 
 
