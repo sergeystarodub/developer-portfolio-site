@@ -2,10 +2,10 @@
   6 Секция компетенции - competencies
 ========================= */
 .competencies__title {
-  margin-bottom: 104px;
+  margin-bottom: 139px;
   font-size: 55px;
   line-height: 72px;
-  /* после pixel perfect */
+  /* после pixel perfect - подумать - может удалить*/
   position: relative;
   left: -2px;
 }
@@ -19,18 +19,19 @@
   font-size: 35px;
   line-height: 46px;
   color: #1bff07;
-  /* после pixel perfect */
-  position: relative;
-  left: -2px;
+  /* после pixel perfect - осталось спрошлой версии, здесь тоже есть смещения - пока закоментил может быть удалю-эти смещения может быть ошибка дизайнера */
+  /* position: relative;
+  left: -2px; */
 }
 
 .competencies-item__text {
-  max-width: 778px;
+  /* max-width: 778px - с прошлой версии сайта - сейчас по разному, максимальная 570 - может быть сделать модификаторы для каждого сделать в размер */
+  /* max-width: 778px; */
   font-size: 22px;
   line-height: 29px;
-  /* после pixel perfect */
-  position: relative;
-  left: -2px;
+  /* после pixel perfect - это с прошлой версии осталось - здесь так делать не буду - потом удалить*/
+  /* position: relative;
+  left: -2px; */
 }
 
 
@@ -40,13 +41,17 @@
   margin-bottom: 15px;
 }
 
+.competencies-item__heading-wrapper_offset-bottom-large {
+  margin-bottom: 54px;
+}
+
 .competencies-item__heading-wrapper::before {
   content: "";
   display: block;
   position: absolute;
   left: 0px;
-  /* высчитал как 44px - высота иконки плюс 16px - отступ и еще знак минуса */
-  top: -60px;
+  /* высчитал как 44px - высота иконки плюс 15px - отступ и еще знак минуса */
+  top: -59px;
   /* так вылазит баг -при сужении экрана иконка налазит на заголовок */
   /* высчитал как 46px - высота текста плюс 16 - отступ */
   /* bottom: 62px; */
@@ -73,26 +78,25 @@
   background-image: url("../resources/competencies-icons/competencies-icons-four.png");
 }
 
-.competencies-item__heading-wrapper_offset-bottom-small::before {
-  /* высчитал как 44px - высота иконки плюс 12px - отступ и еще знак минуса */
+/* потом удалить - сейчас в этой версии все отступы равны 15 */
+
+/* .competencies-item__heading-wrapper_offset-bottom-small::before {
+  высчитал как 44px - высота иконки плюс 12px - отступ и еще знак минуса
   top: -56px;
-  /* так может быть баг если заголовок будет не во одну строку иконка на него налезет */
-  /* высчитал как 46px - высота текста плюс 12 - отступ */
-  /* bottom: 58px; */
+  так может быть баг если заголовок будет не во одну строку иконка на него налезет
+  высчитал как 46px - высота текста плюс 12 - отступ
+  bottom: 58px;
+} */
+
+.competencies-item__heading_short-text {
+  /* может быть max-width потом изменить по макету */
+  /* max-width: 651px; */
+  /* после pixel perfect - это может быть удалить */
+  /* position: relative;
+  left: -1px; */
 }
 
-.heading_short-text {
-  max-width: 651px;
-  /* после pixel perfect */
-  position: relative;
-  left: -1px;
-}
 
-.text_positioned {
-  /* после pixel perfect */
-  position: relative;
-  left: -1px;
-}
 
 
 
@@ -102,13 +106,15 @@
   bottom: 108px;
 } */
 
-.competencies-item {
+/* потом удалить - делаю через флексбокс */
+
+/* .competencies-item {
   margin-bottom: 120px;
 }
 
 .competencies-item:last-child {
   margin-bottom: 0;
-}
+} */
 
 .competencies {
   margin-bottom: 150px;
