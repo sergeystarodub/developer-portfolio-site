@@ -1,6 +1,10 @@
 /* ======================
   6 Секция компетенции - competencies
 ========================= */
+.competencies {
+  margin-bottom: 150px;
+}
+
 .competencies__title {
   margin-bottom: 139px;
   font-size: 55px;
@@ -15,6 +19,22 @@
   margin-bottom: 15px;
 } */
 
+.competencies-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 99px;
+
+}
+
+.competencies-item {
+  width: calc(50% - 5px);
+}
+
+.competencies-item_offset-padding {
+  padding-top: 8px;
+}
+
 .competencies-item__heading {
   font-size: 35px;
   line-height: 46px;
@@ -24,14 +44,26 @@
   left: -2px; */
 }
 
+/* чтобы совпало с макетом - после pixel-perfect */
+.competencies-item__heading_short-title {
+  max-width: 422px;
+}
+
 .competencies-item__text {
-  /* max-width: 778px - с прошлой версии сайта - сейчас по разному, максимальная 570 - может быть сделать модификаторы для каждого сделать в размер */
-  /* max-width: 778px; */
+  max-width: 570px;
   font-size: 22px;
   line-height: 29px;
   /* после pixel perfect - это с прошлой версии осталось - здесь так делать не буду - потом удалить*/
   /* position: relative;
   left: -2px; */
+}
+
+.competencies-item__text_short-one {
+  max-width: 535px;
+}
+
+.competencies-item__text_short-four {
+  max-width: 546px;
 }
 
 
@@ -41,8 +73,12 @@
   margin-bottom: 15px;
 }
 
-.competencies-item__heading-wrapper_offset-bottom-large {
+.competencies-item__heading-wrapper_offset-large-three {
   margin-bottom: 54px;
+}
+
+.competencies-item__heading-wrapper_offset-large-four {
+  margin-bottom: 16px;
 }
 
 .competencies-item__heading-wrapper::before {
@@ -88,13 +124,7 @@
   bottom: 58px;
 } */
 
-.competencies-item__heading_short-text {
-  /* может быть max-width потом изменить по макету */
-  /* max-width: 651px; */
-  /* после pixel perfect - это может быть удалить */
-  /* position: relative;
-  left: -1px; */
-}
+
 
 
 
@@ -116,6 +146,3 @@
   margin-bottom: 0;
 } */
 
-.competencies {
-  margin-bottom: 150px;
-}
