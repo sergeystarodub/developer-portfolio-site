@@ -24,7 +24,6 @@
   flex-wrap: wrap;
   justify-content: space-between;
   row-gap: 99px;
-
 }
 
 .competencies-item {
@@ -65,8 +64,6 @@
 .competencies-item__text_short-four {
   max-width: 546px;
 }
-
-
 
 .competencies-item__heading-wrapper {
   position: relative;
@@ -124,12 +121,6 @@
   bottom: 58px;
 } */
 
-
-
-
-
-
-
 /* уже не надо переделал в .competencies-item__heading-wrapper::before*/
 /* высчитал как 92px - высота текста плюс 16 - отступ */
 /* .competencies-item__heading-wrapper_offset-bottom-large::before {
@@ -146,3 +137,88 @@
   margin-bottom: 0;
 } */
 
+/* адаптив - tablet */
+
+@media (max-width: 1199px) {
+  .competencies__title {
+    margin-bottom: 106px;
+    font-size: 45px;
+    line-height: 59px;
+  }
+
+  .competencies-list {
+    row-gap: 84px;
+  }
+
+  .competencies-item {
+    width: calc(50% - 4px);
+  }
+
+  .competencies-item_offset-padding {
+    padding-top: 6px;
+  }
+
+  .competencies-item__heading {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  /* чтобы совпало с макетом - после pixel-perfect */
+  .competencies-item__heading_short-title {
+    max-width: 342px;
+  }
+
+  .competencies-item__heading_inshort-title {
+    max-width: 459px;
+  }
+
+  .competencies-item__text {
+    max-width: 461px;
+    font-size: 18px;
+    line-height: 23px;
+  }
+
+  .competencies-item__text_short-one {
+    max-width: 433px;
+  }
+
+  .competencies-item__text_short-four {
+    max-width: 442px;
+  }
+
+  .competencies-item__heading-wrapper {
+    margin-bottom: 13px;
+  }
+
+  .competencies-item__heading-wrapper_offset-large-three {
+    margin-bottom: 46px;
+  }
+
+  .competencies-item__heading-wrapper_offset-large-four {
+    margin-bottom: 16px;
+  }
+
+  .competencies-item__heading-wrapper::before {
+    left: 0px;
+    /* высчитал как 36px - высота иконки плюс 10px - отступ и еще знак минуса */
+    top: -46px;
+    width: 36px;
+    height: 36px;
+  }
+
+  .competencies-item__heading-wrapper_icon-type-one::before {
+    background-image: url("../resources/competencies-icons/tablet-competencies-icons-one.png");
+  }
+
+  .competencies-item__heading-wrapper_icon-type-two::before {
+    background-image: url("../resources/competencies-icons/tablet-competencies-icons-two.png");
+  }
+
+  .competencies-item__heading-wrapper_icon-type-three::before {
+    background-image: url("../resources/competencies-icons/tablet-competencies-icons-three.png");
+  }
+
+  .competencies-item__heading-wrapper_icon-type-four::before {
+    background-image: url("../resources/competencies-icons/tablet-competencies-icons-four.png");
+  }
+}
