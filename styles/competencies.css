@@ -222,3 +222,49 @@
     background-image: url("../resources/competencies-icons/tablet-competencies-icons-four.png");
   }
 }
+
+/* адаптив - mobile */
+
+@media (max-width: 767px) {
+  .competencies {
+    margin-bottom: 100px;
+  }
+
+  .competencies__title {
+    /* подкорректировать значения так как в макете ошибка - текст вылазит за границы */
+    font-size: 40px;
+    line-height: 59px;
+  }
+
+  .competencies-list {
+    row-gap: 108px;
+  }
+
+  .competencies-item {
+    width: 100%;
+  }
+
+  .competencies-item_offset-padding {
+    padding-top: 0;
+  }
+
+  .competencies-item_inshort-gap {
+    /* в макете у этого элемента другой gap - 106 - так общий gap и margin суммируются - 108-2=106 */
+    margin-bottom: -2px;
+  }
+
+  .competencies-item__heading {
+    max-width: 100%;
+  }
+
+  .competencies-item__text {
+    /* чтобы текст в теге р не был ограничен модификаторами а был на всю ширину - просто width:100%-не работает */
+    max-width: 100%;
+  }
+
+  .competencies-item__heading-wrapper {
+    margin-bottom: 15px;
+  }
+
+  
+}
