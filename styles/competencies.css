@@ -173,18 +173,21 @@
   }
 
   .competencies-item__text {
-    max-width: 461px;
+    /* если получится без этого - удалить */
+    /* max-width: 461px; */
+    max-width: 100%;
     font-size: 18px;
     line-height: 23px;
   }
 
-  .competencies-item__text_short-one {
+  /* если получится без этого - удалить */
+  /* .competencies-item__text_short-one {
     max-width: 433px;
   }
 
   .competencies-item__text_short-four {
     max-width: 442px;
-  }
+  } */
 
   .competencies-item__heading-wrapper {
     margin-bottom: 13px;
