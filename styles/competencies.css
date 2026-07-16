@@ -14,11 +14,6 @@
   left: -2px;
 }
 
-/* это не нужно */
-/* .competencies-item__heading {
-  margin-bottom: 15px;
-} */
-
 .competencies-list {
   display: flex;
   flex-wrap: wrap;
@@ -30,7 +25,7 @@
   width: calc(50% - 5px);
 }
 
-.competencies-item_offset-padding {
+.competencies-item_offset {
   padding-top: 8px;
 }
 
@@ -38,13 +33,10 @@
   font-size: 35px;
   line-height: 46px;
   color: #1bff07;
-  /* после pixel perfect - осталось спрошлой версии, здесь тоже есть смещения - пока закоментил может быть удалю-эти смещения может быть ошибка дизайнера */
-  /* position: relative;
-  left: -2px; */
 }
 
 /* чтобы совпало с макетом - после pixel-perfect */
-.competencies-item__heading_short-title {
+.competencies-item__heading_frameworks {
   max-width: 422px;
 }
 
@@ -52,9 +44,6 @@
   max-width: 570px;
   font-size: 22px;
   line-height: 29px;
-  /* после pixel perfect - это с прошлой версии осталось - здесь так делать не буду - потом удалить*/
-  /* position: relative;
-  left: -2px; */
 }
 
 .competencies-item__text_short-one {
@@ -111,32 +100,6 @@
   background-image: url("../resources/competencies-icons/competencies-icons-four.png");
 }
 
-/* потом удалить - сейчас в этой версии все отступы равны 15 */
-
-/* .competencies-item__heading-wrapper_offset-bottom-small::before {
-  высчитал как 44px - высота иконки плюс 12px - отступ и еще знак минуса
-  top: -56px;
-  так может быть баг если заголовок будет не во одну строку иконка на него налезет
-  высчитал как 46px - высота текста плюс 12 - отступ
-  bottom: 58px;
-} */
-
-/* уже не надо переделал в .competencies-item__heading-wrapper::before*/
-/* высчитал как 92px - высота текста плюс 16 - отступ */
-/* .competencies-item__heading-wrapper_offset-bottom-large::before {
-  bottom: 108px;
-} */
-
-/* потом удалить - делаю через флексбокс */
-
-/* .competencies-item {
-  margin-bottom: 120px;
-}
-
-.competencies-item:last-child {
-  margin-bottom: 0;
-} */
-
 /* адаптив - tablet */
 
 @media (max-width: 1199px) {
@@ -154,7 +117,7 @@
     width: calc(50% - 4px);
   }
 
-  .competencies-item_offset-padding {
+  .competencies-item_offset {
     padding-top: 6px;
   }
 
@@ -164,30 +127,19 @@
   }
 
   /* чтобы совпало с макетом - после pixel-perfect */
-  .competencies-item__heading_short-title {
+  .competencies-item__heading_frameworks {
     max-width: 342px;
   }
 
-  .competencies-item__heading_inshort-title {
+  .competencies-item__heading_mobile {
     max-width: 459px;
   }
 
   .competencies-item__text {
-    /* если получится без этого - удалить */
-    /* max-width: 461px; */
     max-width: 100%;
     font-size: 18px;
     line-height: 23px;
   }
-
-  /* если получится без этого - удалить */
-  /* .competencies-item__text_short-one {
-    max-width: 433px;
-  }
-
-  .competencies-item__text_short-four {
-    max-width: 442px;
-  } */
 
   .competencies-item__heading-wrapper {
     margin-bottom: 13px;
@@ -247,11 +199,11 @@
     width: 100%;
   }
 
-  .competencies-item_offset-padding {
+  .competencies-item_offset {
     padding-top: 0;
   }
 
-  .competencies-item_inshort-gap {
+  .competencies-item_compact {
     /* в макете у этого элемента другой gap - 106 - так общий gap и margin суммируются - 108-2=106 */
     margin-bottom: -2px;
   }
@@ -268,6 +220,4 @@
   .competencies-item__heading-wrapper {
     margin-bottom: 15px;
   }
-
-  
 }
