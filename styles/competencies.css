@@ -1,0 +1,223 @@
+/* ======================
+  6 Секция компетенции - competencies
+========================= */
+.competencies {
+  margin-bottom: 150px;
+}
+
+.competencies__title {
+  margin-bottom: 139px;
+  font-size: 55px;
+  line-height: 72px;
+  /* после pixel perfect - подумать - может удалить*/
+  position: relative;
+  left: -2px;
+}
+
+.competencies-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 99px;
+}
+
+.competencies-item {
+  width: calc(50% - 5px);
+}
+
+.competencies-item_offset {
+  padding-top: 8px;
+}
+
+.competencies-item__heading {
+  font-size: 35px;
+  line-height: 46px;
+  color: #1bff07;
+}
+
+/* чтобы совпало с макетом - после pixel-perfect */
+.competencies-item__heading_frameworks {
+  max-width: 422px;
+}
+
+.competencies-item__text {
+  max-width: 570px;
+  font-size: 22px;
+  line-height: 29px;
+}
+
+.competencies-item__text_short-one {
+  max-width: 535px;
+}
+
+.competencies-item__text_short-four {
+  max-width: 546px;
+}
+
+.competencies-item__heading-wrapper {
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.competencies-item__heading-wrapper_offset-large-three {
+  margin-bottom: 54px;
+}
+
+.competencies-item__heading-wrapper_offset-large-four {
+  margin-bottom: 16px;
+}
+
+.competencies-item__heading-wrapper::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0px;
+  /* высчитал как 44px - высота иконки плюс 15px - отступ и еще знак минуса */
+  top: -59px;
+  /* так вылазит баг -при сужении экрана иконка налазит на заголовок */
+  /* высчитал как 46px - высота текста плюс 16 - отступ */
+  /* bottom: 62px; */
+  width: 45px;
+  height: 44px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.competencies-item__heading-wrapper_icon-type-one::before {
+  background-image: url("../resources/competencies-icons/competencies-icons-one.png");
+}
+
+.competencies-item__heading-wrapper_icon-type-two::before {
+  background-image: url("../resources/competencies-icons/competencies-icons-two.png");
+}
+
+.competencies-item__heading-wrapper_icon-type-three::before {
+  background-image: url("../resources/competencies-icons/competencies-icons-three.png");
+}
+
+.competencies-item__heading-wrapper_icon-type-four::before {
+  background-image: url("../resources/competencies-icons/competencies-icons-four.png");
+}
+
+/* адаптив - tablet */
+
+@media (max-width: 1199px) {
+  .competencies__title {
+    margin-bottom: 106px;
+    font-size: 45px;
+    line-height: 59px;
+  }
+
+  .competencies-list {
+    row-gap: 84px;
+  }
+
+  .competencies-item {
+    width: calc(50% - 4px);
+  }
+
+  .competencies-item_offset {
+    padding-top: 6px;
+  }
+
+  .competencies-item__heading {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  /* чтобы совпало с макетом - после pixel-perfect */
+  .competencies-item__heading_frameworks {
+    max-width: 342px;
+  }
+
+  .competencies-item__heading_mobile {
+    max-width: 459px;
+  }
+
+  .competencies-item__text {
+    max-width: 100%;
+    font-size: 18px;
+    line-height: 23px;
+  }
+
+  .competencies-item__heading-wrapper {
+    margin-bottom: 13px;
+  }
+
+  .competencies-item__heading-wrapper_offset-large-three {
+    margin-bottom: 46px;
+  }
+
+  .competencies-item__heading-wrapper_offset-large-four {
+    margin-bottom: 16px;
+  }
+
+  .competencies-item__heading-wrapper::before {
+    left: 0px;
+    /* высчитал как 36px - высота иконки плюс 10px - отступ и еще знак минуса */
+    top: -46px;
+    width: 36px;
+    height: 36px;
+  }
+
+  .competencies-item__heading-wrapper_icon-type-one::before {
+    background-image: url("../resources/competencies-icons/tablet-competencies-icons-one.png");
+  }
+
+  .competencies-item__heading-wrapper_icon-type-two::before {
+    background-image: url("../resources/competencies-icons/tablet-competencies-icons-two.png");
+  }
+
+  .competencies-item__heading-wrapper_icon-type-three::before {
+    background-image: url("../resources/competencies-icons/tablet-competencies-icons-three.png");
+  }
+
+  .competencies-item__heading-wrapper_icon-type-four::before {
+    background-image: url("../resources/competencies-icons/tablet-competencies-icons-four.png");
+  }
+}
+
+/* адаптив - mobile */
+
+@media (max-width: 767px) {
+  .competencies {
+    margin-bottom: 100px;
+  }
+
+  .competencies__title {
+    /* подкорректировать значения так как в макете ошибка - текст вылазит за границы */
+    font-size: 40px;
+    line-height: 59px;
+  }
+
+  .competencies-list {
+    row-gap: 108px;
+  }
+
+  .competencies-item {
+    width: 100%;
+  }
+
+  .competencies-item_offset {
+    padding-top: 0;
+  }
+
+  .competencies-item_compact {
+    /* в макете у этого элемента другой gap - 106 - так общий gap и margin суммируются - 108-2=106 */
+    margin-bottom: -2px;
+  }
+
+  .competencies-item__heading {
+    max-width: 100%;
+  }
+
+  .competencies-item__text {
+    /* чтобы текст в теге р не был ограничен модификаторами а был на всю ширину - просто width:100%-не работает */
+    max-width: 100%;
+  }
+
+  .competencies-item__heading-wrapper {
+    margin-bottom: 15px;
+  }
+}

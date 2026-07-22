@@ -1,0 +1,95 @@
+/* ======================
+  5 Секция проекты - projects
+========================= */
+
+/* color уже задан в body */
+
+.projects__title {
+  margin-bottom: 40px;
+  font-size: 55px;
+  line-height: 72px;
+  /* после pixel perfect */
+  position: relative;
+  left: -5px;
+}
+
+.projects-list {
+  margin-bottom: 80px;
+}
+
+.projects-item {
+  width: 100%;
+  /* height: 550px;
+  border-radius: 30px; */
+}
+
+/* чтобы не применялся цвет к ссылке - тексту */
+.projects-item__link {
+  position: relative;
+  display: block;
+  color: currentColor;
+  text-decoration: none;
+}
+
+.projects-item__image-wrapper {
+  height: 550px;
+  border-radius: 30px;
+  /* использую чтобы в projects-item__image не писать border-radius: 30px */
+  overflow: hidden;
+}
+
+.projects-item__image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.projects-item__box {
+  position: absolute;
+  left: 50px;
+  bottom: 50px;
+}
+
+.projects-item__heading {
+  margin-bottom: 5px;
+  font-size: 35px;
+  line-height: 46px;
+}
+
+.projects-item__desc {
+  font-size: 30px;
+  line-height: 39px;
+}
+
+.projects__btn {
+  padding: 56px 85px 58px 86px;
+  width: 582px;
+  display: inline-block;
+  border-radius: 10px;
+  font-size: 30px;
+  line-height: 39px;
+  text-align: center;
+  background-color: #1bff07;
+  text-decoration: none;
+  color: #000;
+  cursor: pointer;
+  transition: color 0.3s;
+  /* после pixel perfect */
+  position: relative;
+  left: -2px;
+}
+
+.projects__btn:hover {
+  /* чтобы не увеличивалась высота ведь border дает по 1px сверху и снизу */
+  height: 153px;
+  /* после pixel perfect уменьшил на 2px так как если height: 153px и border 1px сверху и снизу line-height тоже уменьшается на 2px */
+  line-height: 37px;
+  border: 1px solid #1bff07;
+  background-color: #000;
+  color: #1bff07;
+}
+
+.projects {
+  margin-bottom: 150px;
+}

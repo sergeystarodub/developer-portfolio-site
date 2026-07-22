@@ -1,0 +1,76 @@
+/* ======================
+  7 Секция услуги - services
+========================= */
+.services {
+  margin-bottom: 150px;
+}
+
+.services__heading {
+  margin-bottom: 74px;
+  font-size: 35px;
+  line-height: 46px;
+}
+
+.services-item {
+  width: 100%;
+  margin-bottom: 74px;
+}
+
+.services-item:last-child {
+  margin-bottom: 0;
+}
+
+.services-item__image-wrapper {
+  height: 200px;
+  border-radius: 30px;
+  /* использую чтобы в services-item__image не писать border-radius: 30px */
+  overflow: hidden;
+}
+
+.services-item__image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* тут уже не нужно закоментил */
+  /* border-radius: 30px; */
+}
+
+.services-item__description-box {
+  padding: 40px 62px 40px 40px;
+  width: 100%;
+  /* если просто height то текст налазит */
+  /* height: 283px; */
+  min-height: 283px;
+  background-color: #191c19;
+  border-radius: 30px;
+}
+
+.services-item__title {
+  margin-bottom: 15px;
+  font-size: 55px;
+  line-height: 72px;
+  color: #1bff07;
+}
+
+.services-item__text {
+  max-width: 749px;
+  font-size: 22px;
+  line-height: 29px;
+}
+
+.services-item_margin-big {
+  margin-bottom: 137px;
+}
+
+.services-item__description-box_extra-padding {
+  padding-bottom: 69px;
+}
+
+.services__heading_short-title {
+  max-width: 403px;
+}
+
+.services-item__text_size-short {
+  max-width: 724px;
+}
