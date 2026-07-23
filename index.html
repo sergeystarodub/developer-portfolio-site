@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
@@ -29,17 +29,17 @@
       <header class="header">
         <div class="container">
           <div class="header__container-wrapper"> -->
-            <!-- не раскоменчивать -->
-            <!-- мб потом удалить - первый вариант логотипа - его закоментил - сделал вторым вариантом-->
-            <!-- <a class="header__logo-link" href="#">
+    <!-- не раскоменчивать -->
+    <!-- мб потом удалить - первый вариант логотипа - его закоментил - сделал вторым вариантом-->
+    <!-- <a class="header__logo-link" href="#">
               <div class="header__logo">
                 <p class="header__logo-text">ORLOV</p>
               </div>
             </a> -->
 
-            <!-- второй вариант логотипа - сделал его-->
-            <!-- если выкладывать сайт на хостинг поменять href="#" на href="/" -->
-            <!-- <a class="header__logo-link" href="#" aria-label="Главная - логотип"
+    <!-- второй вариант логотипа - сделал его-->
+    <!-- если выкладывать сайт на хостинг поменять href="#" на href="/" -->
+    <!-- <a class="header__logo-link" href="#" aria-label="Главная - логотип"
               ><span class="header__logo-span">ORLOV</span></a
             >
             <nav class="nav-menu">
@@ -143,13 +143,11 @@
               <div
                 class="competencies-item__heading-wrapper competencies-item__heading-wrapper_icon-type-one"
               >
-                <h3
-                  class="competencies-item__heading"
-                >
-                  HTML и CSS
-                </h3>
+                <h3 class="competencies-item__heading">HTML и CSS</h3>
               </div>
-              <p class="competencies-item__text competencies-item__text_short-one">
+              <p
+                class="competencies-item__text competencies-item__text_short-one"
+              >
                 это основа фронтенд разработки. Умение создавать и правильно
                 структурировать HTML-документы, а также применять стили к этим
                 документам на CSS, является обязательным навыком для каждого
@@ -160,11 +158,7 @@
               <div
                 class="competencies-item__heading-wrapper competencies-item__heading-wrapper_icon-type-two"
               >
-                <h3
-                  class="competencies-item__heading"
-                >
-                  JavaScript
-                </h3>
+                <h3 class="competencies-item__heading">JavaScript</h3>
               </div>
               <p class="competencies-item__text">
                 это язык программирования, который используется для создания
@@ -202,7 +196,9 @@
                   Разработка для мобильных устройств и адаптивная верстка
                 </h3>
               </div>
-              <p class="competencies-item__text competencies-item__text_short-four">
+              <p
+                class="competencies-item__text competencies-item__text_short-four"
+              >
                 фронтенд разработчики должны быть знакомы с различными
                 библиотеками и фреймворками, такими как React, Angular, Vue и
                 другими. Умение использовать готовые решения, адаптировать их
@@ -222,16 +218,28 @@
           <ul class="services-list">
             <li class="services-item">
               <div class="services-item__image-wrapper">
-                <img
-                  class="services-item__image"
-                  src="resources/services-image/desktop_website-development-image.png"
-                  alt="Изображение сайта под ключ"
-                />
+                <picture>
+                  <source
+                    media="(max-width: 500px)"
+                    srcset="
+                      resources/services-image/mobile_website-development-image.png
+                    "
+                  />
+                  <source
+                    media="(max-width: 1199px)"
+                    srcset="
+                      resources/services-image/tablet_website-development-image.png
+                    "
+                  />
+                  <img
+                    class="services-item__image"
+                    src="resources/services-image/desktop_website-development-image.png"
+                    alt="Изображение сайта под ключ"
+                  />
+                </picture>
               </div>
               <div class="services-item__description-box">
-                <h3 class="services-item__title">
-                  Разработка сайта под ключ
-                </h3>
+                <h3 class="services-item__title">Разработка сайта под ключ</h3>
                 <p class="services-item__text">
                   Это создание дизайн веб-сайтов, созданный для удобства
                   пользователя и решения бизнес-задач <br />Сайты должны быть
@@ -242,18 +250,30 @@
             </li>
             <li class="services-item">
               <div class="services-item__image-wrapper">
-                <img
-                  class="services-item__image"
-                  src="resources/services-image/desktop_website-layout-image.png"
-                  alt="Изображение верстки сайтов"
-                />
+                <picture>
+                  <source
+                    media="(max-width: 500px)"
+                    srcset="
+                      resources/services-image/mobile_website-layout-image.png
+                    "
+                  />
+                  <source
+                    media="(max-width: 1199px)"
+                    srcset="
+                      resources/services-image/tablet_website-layout-image.png
+                    "
+                  />
+                  <img
+                    class="services-item__image"
+                    src="resources/services-image/desktop_website-layout-image.png"
+                    alt="Изображение верстки сайтов"
+                  />
+                </picture>
               </div>
               <div
                 class="services-item__description-box services-item__description-box_extra-padding"
               >
-                <h3 class="services-item__title">
-                  Верстка сайтов
-                </h3>
+                <h3 class="services-item__title">Верстка сайтов</h3>
                 <p class="services-item__text">
                   Это процесс создания HTML-документов и применения к ним стилей
                   на CSS. Фронтенд разработчик может помочь создать
@@ -262,12 +282,28 @@
               </div>
             </li>
             <li class="services-item">
-              <div class="services-item__image-wrapper">
-                <img
-                  class="services-item__image"
-                  src="resources/services-image/desktop_mobile-interface-image.png"
-                  alt="Изображение мобильного интерфейса для сайта"
-                />
+              <div
+                class="services-item__image-wrapper services-item__image-wrapper_size-mobile"
+              >
+                <picture>
+                  <source
+                    media="(max-width: 500px)"
+                    srcset="
+                      resources/services-image/mobile_mobile-interface-image.png
+                    "
+                  />
+                  <source
+                    media="(max-width: 1199px)"
+                    srcset="
+                      resources/services-image/tablet_mobile-interface-image.png
+                    "
+                  />
+                  <img
+                    class="services-item__image"
+                    src="resources/services-image/desktop_mobile-interface-image.png"
+                    alt="Изображение мобильного интерфейса для сайта"
+                  />
+                </picture>
               </div>
               <div class="services-item__description-box">
                 <h3 class="services-item__title">
@@ -317,7 +353,9 @@
     <!-- Подвал-футер -->
     <footer class="footer">
       <div class="container footer__container">
-        <p class="footer__description">Портфолио фронтенд-разработчика Саши Орлова</p>
+        <p class="footer__description">
+          Портфолио фронтенд-разработчика Саши Орлова
+        </p>
         <p class="footer__copyright">Все права защищены. 2026</p>
       </div>
     </footer>

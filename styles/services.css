@@ -71,3 +71,23 @@
 .services-item__text_size-short {
   max-width: 724px;
 }
+
+/* адаптив - tablet */
+
+@media (max-width: 1199px) {
+  .services-item__image-wrapper {
+    height: 162px;
+  }
+}
+
+/* адаптив - mobile */
+
+@media (max-width: 767px) {
+  .services-item__image-wrapper {
+    height: 225px;
+  }
+
+  .services-item__image-wrapper_size-mobile {
+    height: 162px;
+  }
+}
