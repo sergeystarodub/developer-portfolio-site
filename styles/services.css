@@ -38,7 +38,8 @@
 }
 
 .services-item__description-box {
-  padding: 40px 62px 40px 40px;
+  /* если не понадобится-удалить */
+  /* padding: 40px 62px 40px 40px; */
   width: 100%;
   /* если просто height то текст налазит */
   /* height: 283px; */
@@ -47,29 +48,34 @@
   border-radius: 30px;
 }
 
+.services-item__inner {
+  /* сделал на все стороны */
+  padding: 40px;
+}
+
+.services-item__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.services-item__col {
+  width: calc(50% - 5px);
+}
+
 .services-item__title {
-  margin-bottom: 15px;
   font-size: 55px;
-  line-height: 72px;
+  line-height: 61px;
   color: #1bff07;
 }
 
 .services-item__text {
-  max-width: 749px;
   font-size: 22px;
   line-height: 29px;
 }
 
-.services-item__description-box_extra-padding {
-  padding-bottom: 69px;
-}
-
 .services__heading_short-title {
   max-width: 403px;
-}
-
-.services-item__text_size-short {
-  max-width: 724px;
 }
 
 /* адаптив - tablet */
