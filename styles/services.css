@@ -89,8 +89,59 @@
 /* адаптив - tablet */
 
 @media (max-width: 1199px) {
+  .services {
+    margin-bottom: 110px;
+  }
+
+  .services__heading {
+    margin-bottom: 60px;
+    font-size: 28px;
+    line-height: 37px;
+  }
+
+  .services-list {
+    gap: 32px;
+  }
+
   .services-item__image-wrapper {
     height: 162px;
+    border-radius: 24px;
+  }
+
+  .services-item__description-box {
+    min-height: 229px;
+    border-radius: 24px;
+  }
+
+  .services-item__inner {
+    /* сделал на все стороны */
+    padding: 32px;
+  }
+
+  .services-item__col {
+    width: calc(50% - 4px);
+  }
+
+  .services-item__title {
+    font-size: 45px;
+    line-height: 50px;
+  }
+
+  .services-item__text {
+    font-size: 18px;
+    line-height: 23px;
+  }
+
+  .services__heading_short-title {
+    max-width: 326px;
+  }
+
+  .services-item__text_offset {
+    padding-top: 4px;
+  }
+
+  .services-item__title_short-width {
+    max-width: 380px;
   }
 }
 
