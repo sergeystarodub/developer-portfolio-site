@@ -78,6 +78,14 @@
   max-width: 403px;
 }
 
+.services-item__text_offset {
+  padding-top: 5px;
+}
+
+.services-item__title_short-width {
+  max-width: 470px;
+}
+
 /* адаптив - tablet */
 
 @media (max-width: 1199px) {
