@@ -148,11 +148,54 @@
 /* адаптив - mobile */
 
 @media (max-width: 767px) {
+  .services {
+    margin-bottom: 100px;
+  }
+
+  .services-list {
+    gap: 60px;
+  }
+
   .services-item__image-wrapper {
     height: 225px;
   }
 
+  .services-item__inner {
+    /* сделал на все стороны - right 31px чтобы совпал текст с макетом -почти совпал */
+    padding: 30px 31px 21px 21px;
+  }
+
+  .services-item__col {
+    width: 100%;
+  }
+
+  .services-item__title {
+    margin-bottom: 15px;
+    font-size: 35px;
+    line-height: 39px;
+  }
+
+  .services-item__description-box_size-one {
+    min-height: 397px;
+  }
+
+  .services-item__description-box_size-two {
+    min-height: 307px;
+  }
+
+  .services-item__description-box_size-three {
+    min-height: 427px;
+  }
+
   .services-item__image-wrapper_size-mobile {
     height: 162px;
+  }
+
+  .services-item__text_offset {
+    padding-top: 0;
+  }
+
+  .services-item__inner_size-right {
+    padding-right: 32px;
   }
 }
