@@ -38,8 +38,6 @@
 }
 
 .services-item__description-box {
-  /* если не понадобится-удалить */
-  /* padding: 40px 62px 40px 40px; */
   width: 100%;
   /* если просто height то текст налазит */
   /* height: 283px; */
@@ -160,6 +158,10 @@
     height: 225px;
   }
 
+  .services-item__description-box {
+    min-height: 0;
+  }
+
   .services-item__inner {
     /* сделал на все стороны - right 31px чтобы совпал текст с макетом -почти совпал */
     padding: 30px 31px 21px 21px;
@@ -175,16 +177,18 @@
     line-height: 39px;
   }
 
-  .services-item__description-box_size-one {
-    min-height: 397px;
+  .services-item__inner_size-one {
+    padding-bottom: 67px;
   }
 
-  .services-item__description-box_size-two {
-    min-height: 307px;
+  .services-item__inner_size-two {
+    padding-bottom: 62px;
+    /* чтобы совпало с макетом */
+    padding-right: 32px;
   }
 
-  .services-item__description-box_size-three {
-    min-height: 427px;
+  .services-item__inner_size-three {
+    padding-bottom: 58px;
   }
 
   .services-item__image-wrapper_size-mobile {
@@ -193,9 +197,5 @@
 
   .services-item__text_offset {
     padding-top: 0;
-  }
-
-  .services-item__inner_size-right {
-    padding-right: 32px;
   }
 }
