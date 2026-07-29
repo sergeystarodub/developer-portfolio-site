@@ -67,6 +67,10 @@
   color: #1bff07;
 }
 
+.services-item:first-child .services-item__title {
+  max-width: 470px;
+}
+
 .services-item__text {
   font-size: 22px;
   line-height: 29px;
@@ -78,10 +82,6 @@
 
 .services-item__text_offset {
   padding-top: 5px;
-}
-
-.services-item__title_short-width {
-  max-width: 470px;
 }
 
 /* адаптив - tablet */
@@ -125,6 +125,10 @@
     line-height: 50px;
   }
 
+  .services-item:first-child .services-item__title {
+    max-width: 380px;
+  }
+
   .services-item__text {
     font-size: 18px;
     line-height: 23px;
@@ -136,10 +140,6 @@
 
   .services-item__text_offset {
     padding-top: 4px;
-  }
-
-  .services-item__title_short-width {
-    max-width: 380px;
   }
 }
 
@@ -177,17 +177,17 @@
     line-height: 39px;
   }
 
-  .services-item__inner_size-one {
+  .services-item__inner_type-website {
     padding-bottom: 67px;
   }
 
-  .services-item__inner_size-two {
+  .services-item__inner_type-layout {
     padding-bottom: 62px;
     /* чтобы совпало с макетом */
     padding-right: 32px;
   }
 
-  .services-item__inner_size-three {
+  .services-item__inner_type-mobile {
     padding-bottom: 58px;
   }
 
