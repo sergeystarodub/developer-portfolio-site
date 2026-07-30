@@ -7,6 +7,7 @@
 
 .services__heading {
   margin-bottom: 80px;
+  max-width: 403px;
   font-size: 35px;
   line-height: 46px;
 }
@@ -76,10 +77,6 @@
   line-height: 29px;
 }
 
-.services__heading_short-title {
-  max-width: 403px;
-}
-
 .services-item__text_offset {
   padding-top: 5px;
 }
@@ -93,6 +90,7 @@
 
   .services__heading {
     margin-bottom: 60px;
+    max-width: 326px;
     font-size: 28px;
     line-height: 37px;
   }
@@ -132,10 +130,6 @@
   .services-item__text {
     font-size: 18px;
     line-height: 23px;
-  }
-
-  .services__heading_short-title {
-    max-width: 326px;
   }
 
   .services-item__text_offset {
