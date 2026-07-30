@@ -6,18 +6,20 @@
 }
 
 .services__heading {
-  margin-bottom: 74px;
+  margin-bottom: 80px;
+  max-width: 403px;
   font-size: 35px;
   line-height: 46px;
 }
 
-.services-item {
-  width: 100%;
-  margin-bottom: 74px;
+.services-list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
 }
 
-.services-item:last-child {
-  margin-bottom: 0;
+.services-item {
+  width: 100%;
 }
 
 .services-item__image-wrapper {
@@ -37,7 +39,6 @@
 }
 
 .services-item__description-box {
-  padding: 40px 62px 40px 40px;
   width: 100%;
   /* если просто height то текст налазит */
   /* height: 283px; */
@@ -46,31 +47,149 @@
   border-radius: 30px;
 }
 
+.services-item__inner {
+  /* сделал на все стороны */
+  padding: 40px;
+}
+
+.services-item__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.services-item__col {
+  width: calc(50% - 5px);
+}
+
 .services-item__title {
-  margin-bottom: 15px;
   font-size: 55px;
-  line-height: 72px;
+  line-height: 61px;
   color: #1bff07;
 }
 
+.services-item:first-child .services-item__title {
+  max-width: 470px;
+}
+
 .services-item__text {
-  max-width: 749px;
   font-size: 22px;
   line-height: 29px;
 }
 
-.services-item_margin-big {
-  margin-bottom: 137px;
+.services-item__text_offset {
+  padding-top: 5px;
 }
 
-.services-item__description-box_extra-padding {
-  padding-bottom: 69px;
+/* адаптив - tablet */
+
+@media (max-width: 1199px) {
+  .services {
+    margin-bottom: 110px;
+  }
+
+  .services__heading {
+    margin-bottom: 60px;
+    max-width: 326px;
+    font-size: 28px;
+    line-height: 37px;
+  }
+
+  .services-list {
+    gap: 32px;
+  }
+
+  .services-item__image-wrapper {
+    height: 162px;
+    border-radius: 24px;
+  }
+
+  .services-item__description-box {
+    min-height: 229px;
+    border-radius: 24px;
+  }
+
+  .services-item__inner {
+    /* сделал на все стороны */
+    padding: 32px;
+  }
+
+  .services-item__col {
+    width: calc(50% - 4px);
+  }
+
+  .services-item__title {
+    font-size: 45px;
+    line-height: 50px;
+  }
+
+  .services-item:first-child .services-item__title {
+    max-width: 380px;
+  }
+
+  .services-item__text {
+    font-size: 18px;
+    line-height: 23px;
+  }
+
+  .services-item__text_offset {
+    padding-top: 4px;
+  }
 }
 
-.services__heading_short-title {
-  max-width: 403px;
-}
+/* адаптив - mobile */
 
-.services-item__text_size-short {
-  max-width: 724px;
+@media (max-width: 767px) {
+  .services {
+    margin-bottom: 100px;
+  }
+
+  .services-list {
+    gap: 60px;
+  }
+
+  .services-item__image-wrapper {
+    height: 225px;
+  }
+
+  .services-item__description-box {
+    min-height: 0;
+  }
+
+  .services-item__inner {
+    /* сделал на все стороны - right 31px чтобы совпал текст с макетом -почти совпал */
+    padding: 30px 31px 21px 21px;
+  }
+
+  .services-item__col {
+    width: 100%;
+  }
+
+  .services-item__title {
+    margin-bottom: 15px;
+    font-size: 35px;
+    line-height: 39px;
+  }
+
+  .services-item__inner_type-website {
+    padding-bottom: 67px;
+  }
+
+  .services-item__inner_type-layout {
+    padding-bottom: 62px;
+    /* чтобы совпало с макетом */
+    padding-right: 32px;
+  }
+
+  .services-item__inner_type-mobile {
+    padding-bottom: 58px;
+  }
+
+  .services-item__image-wrapper_size-mobile {
+    height: 162px;
+  }
+
+  .services-item__text_offset {
+    padding-top: 0;
+  }
 }
