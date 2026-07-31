@@ -27,8 +27,8 @@
 } */
 
 .contacts__box-wrapper {
-  padding-top: 320px;
-  padding-bottom: 89px;
+  padding-top: 100px;
+  padding-bottom: 101px;
 }
 
 /* закоментил - исправляю */
@@ -39,8 +39,9 @@
 } */
 
 .contacts__title {
-  margin-bottom: 28px;
-  font-size: 35px;
+  margin-bottom: 60px;
+  max-width: 553px;
+  font-size: 60px;
   line-height: 60px;
 }
 
