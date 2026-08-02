@@ -355,7 +355,8 @@
         <div class="container contacts__container">
           <div class="contacts__box-wrapper">
             <p class="contacts__title">Для связи со мной заполните простую форму</p>
-            <ul class="contacts__list">
+            <!-- когда сделаю input это удалить -->
+            <!-- <ul class="contacts__list">
               <li class="contacts__item">
                 <a class="contacts__link" href="#">instagram</a>
               </li>
@@ -365,7 +366,11 @@
               <li class="contacts__item">
                 <a class="contacts__link" href="mailto:sasha@mail.com">mail</a>
               </li>
-            </ul>
+            </ul> -->
+            <form class="contacts__form" action="" autocomplete="on">
+              <input class="contacts__input" type="text" placeholder="Имя Фамилия" name="name">
+              <input class="contacts__input" type="email" placeholder="example@mail.com" name="email">
+            </form>
           </div>
 
           <!-- исправляю -потом удалить -->

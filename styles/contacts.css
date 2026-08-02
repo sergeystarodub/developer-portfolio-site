@@ -45,7 +45,39 @@
   line-height: 60px;
 }
 
-.contacts__list {
+.contacts__form {
+  margin-bottom: 60px;
+}
+
+.contacts__input {
+  display: block;
+  margin-bottom: 26px;
+  padding-left: 40px;
+  width: 567px;
+  height: 60px;
+  font-family: "IBM Plex Mono", sans-serif;
+  font-size: 22px;
+  line-height: 29px;
+  background: #3b3d3b;
+  border-radius: 100px;
+  color: #fff;
+  border: none;
+}
+
+.contacts__input:last-child {
+  margin-bottom: 0;
+}
+
+.contacts__input::placeholder {
+  color: #fff;
+}
+
+.contacts__input:focus {
+  outline: none;
+}
+
+/* когда сделаю input это удалить */
+/* .contacts__list {
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -61,7 +93,7 @@
 
 .contacts__link:hover {
   color: #1bff07;
-}
+} */
 
 /* закоментил - исправляю */
 /* .contacts__image-wrapper {
