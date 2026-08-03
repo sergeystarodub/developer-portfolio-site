@@ -9,7 +9,7 @@
   border-radius: 30px;
   /* чтобы при ширине экрана меньше 1400px (width: 1400px - ширина макета) к изображению справа применялось закругление как в макете */
   /* overflow: hidden; */
-  background-image: url("../resources/contacts-image/image-programmer.png");
+  background-image: url("../resources/contacts-image/image-programmer-desktop.png");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: top right;
