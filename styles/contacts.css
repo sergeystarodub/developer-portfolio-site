@@ -140,3 +140,61 @@
 /* right: -111px;
 bottom: 89px;
 width: 310px; */
+
+/* адаптив - tablet */
+
+@media (max-width: 1199px) {
+  .contacts {
+    margin-bottom: 7px;
+    border-radius: 20px;
+    /* чтобы при ширине экрана меньше 1400px (width: 1400px - ширина макета) к изображению справа применялось закругление как в макете */
+    /* overflow: hidden; */
+    background-image: url("../resources/contacts-image/image-programmer-tablet.png");
+  }
+
+  .contacts__box-wrapper {
+    padding-top: 50px;
+    padding-bottom: 86px;
+  }
+
+  .contacts__title {
+    padding-left: 35px;
+    margin-bottom: 40px;
+    max-width: 373px;
+    font-size: 40px;
+    line-height: 40.5px;
+  }
+
+  .contacts__form {
+    padding-left: 37px;
+    margin-bottom: 40px;
+  }
+
+  .contacts__input {
+    margin-bottom: 17px;
+    padding-left: 24px;
+    width: 383px;
+    height: 41px;
+    font-size: 16px;
+    line-height: 21px;
+  }
+
+  .contacts__send-btn {
+    width: 304px;
+    /* padding: 12px 13px 14px 14px; */
+    /* подкорректировал padding - чтобы высота была 47px */
+    padding: 11px 13px 13px 14px;
+    border-radius: 7px;
+    font-size: 16px;
+    line-height: 21px;
+  }
+
+  .contacts__send-btn-wrapper {
+    padding-left: 37px;
+  }
+}
+
+/* адаптив - mobile */
+
+@media (max-width: 767px) {
+}
