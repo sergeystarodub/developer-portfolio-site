@@ -76,6 +76,29 @@
   outline: none;
 }
 
+.contacts__send-btn {
+  display: block;
+  width: 450px;
+  /* padding: 19px 19px 22px 20px; */
+  /* подкорректировал padding - чтобы высота была 70px */
+  padding: 18px 19px 21px 20px;
+  border: 1px solid #1bff07;
+  border-radius: 10px;
+  text-align: center;
+  font-family: "IBM Plex Mono", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 29px;
+  background-color: #1bff07;
+  color: #000;
+  cursor: pointer;
+}
+
+.contacts__send-btn:hover {
+  background-color: #fff;
+  color: #1bff07;
+}
+
 /* когда сделаю input это удалить */
 /* .contacts__list {
   display: flex;
