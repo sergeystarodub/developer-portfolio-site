@@ -197,4 +197,45 @@ width: 310px; */
 /* адаптив - mobile */
 
 @media (max-width: 767px) {
+  .contacts {
+    margin-bottom: 0;
+    border-radius: 19px;
+    background-image: none;
+  }
+
+  .contacts__box-wrapper {
+    padding-top: 50px;
+    padding-bottom: 52px;
+  }
+
+  .contacts__title,
+  .contacts__form,
+  .contacts__send-btn-wrapper {
+    padding-left: 0;
+  }
+
+  .contacts__title {
+    max-width: 310px;
+    font-size: 35px;
+    line-height: 37.3px;
+  }
+
+  .contacts__input {
+    margin-bottom: 15px;
+    padding-left: 21px;
+    width: 100%;
+    height: 38px;
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  .contacts__send-btn {
+    width: 100%;
+    /* padding: 11px 49px 12px 49px; */
+    /* подкорректировал padding - чтобы высота была 43px */
+    padding: 10px 49px 11px 49px;
+    border-radius: 6px;
+    font-size: 15px;
+    line-height: 20px;
+  }
 }
