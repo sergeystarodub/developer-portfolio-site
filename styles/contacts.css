@@ -31,13 +31,6 @@
   padding-bottom: 101px;
 }
 
-/* закоментил - исправляю */
-/* .contacts__box-wrapper {
-  position: absolute;
-  bottom: 89px;
-  width: 310px;
-} */
-
 .contacts__title {
   margin-bottom: 60px;
   max-width: 553px;
@@ -98,48 +91,6 @@
   background-color: #fff;
   color: #1bff07;
 }
-
-/* когда сделаю input это удалить */
-/* .contacts__list {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.contacts__link {
-  font-size: 60px;
-  line-height: 60px;
-  color: #fff;
-  text-decoration: none;
-  transition: color 0.3s;
-}
-
-.contacts__link:hover {
-  color: #1bff07;
-} */
-
-/* закоментил - исправляю */
-/* .contacts__image-wrapper {
-  position: absolute;
-  после pixel perfect
-  right: -111px;
-  не стал ограничивать пока width жестким размером-чтобы при возможном увеличении секции contacts изображение изменялось пропорционально своей width и height
-  width: 727px;
-  height: 100%;
-} */
-
-/* исправляю-потом удалить */
-/* .contacts__image {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-} */
-
-/* заменить жесткие значения на адаптивные при верстке responsive */
-/* right: -111px;
-bottom: 89px;
-width: 310px; */
 
 /* адаптив - tablet */
 
