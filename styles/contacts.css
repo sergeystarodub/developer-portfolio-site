@@ -46,12 +46,13 @@
   display: block;
   margin-bottom: 26px;
   padding-left: 40px;
+  padding-right: 40px;
   width: 567px;
   height: 60px;
   font-family: "IBM Plex Mono", sans-serif;
   font-size: 22px;
   line-height: 29px;
-  background: #3b3d3b;
+  background-color: #3b3d3b;
   border-radius: 100px;
   color: #fff;
   border: none;
@@ -67,6 +68,17 @@
 
 .contacts__input:focus {
   outline: none;
+}
+
+/* чтобы не менялся фон инпута при автокомплите */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 1000px #3b3d3b inset !important;
+  -webkit-text-fill-color: #fff !important;
+  caret-color: #fff !important; /* Задает цвет курсора */
+  transition: background-color 5000s ease-in-out 0s !important;
 }
 
 .contacts__send-btn {
@@ -85,10 +97,11 @@
   background-color: #1bff07;
   color: #000;
   cursor: pointer;
+  transition: all 0.3s ease;
 }
 
 .contacts__send-btn:hover {
-  background-color: #fff;
+  background-color: #191c19;
   color: #1bff07;
 }
 
@@ -124,6 +137,7 @@
   .contacts__input {
     margin-bottom: 17px;
     padding-left: 24px;
+    padding-right: 24px;
     width: 383px;
     height: 41px;
     font-size: 16px;
@@ -174,6 +188,7 @@
   .contacts__input {
     margin-bottom: 15px;
     padding-left: 21px;
+    padding-right: 21px;
     width: 100%;
     height: 38px;
     font-size: 15px;
