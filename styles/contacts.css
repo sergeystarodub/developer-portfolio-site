@@ -49,7 +49,6 @@
   padding-right: 40px;
   width: 567px;
   height: 60px;
-  font-family: "IBM Plex Mono", sans-serif;
   font-size: 22px;
   line-height: 29px;
   background-color: #3b3d3b;
@@ -90,7 +89,6 @@ input:-webkit-autofill:active {
   border: 1px solid #1bff07;
   border-radius: 10px;
   text-align: center;
-  font-family: "IBM Plex Mono", sans-serif;
   font-weight: 400;
   font-size: 22px;
   line-height: 29px;
