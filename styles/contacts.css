@@ -38,11 +38,6 @@
   line-height: 60px;
 }
 
-/* удалить */
-/* .contacts__form {
-  margin-bottom: 60px;
-} */
-
 .contacts__form {
   display: flex;
   flex-direction: column;
@@ -51,8 +46,6 @@
 
 .contacts__input {
   display: block;
-  /* удалить */
-  /* margin-bottom: 26px; */
   padding-left: 40px;
   padding-right: 40px;
   width: 567px;
@@ -64,11 +57,6 @@
   color: #fff;
   border: none;
 }
-
-/* удалить */
-/* .contacts__input:last-child {
-  margin-bottom: 0;
-} */
 
 .contacts__input::placeholder {
   color: #fff;
@@ -140,14 +128,10 @@ input:-webkit-autofill:active {
 
   .contacts__form {
     padding-left: 37px;
-    /* удалить */
-    /* margin-bottom: 40px; */
     gap: 17px;
   }
 
   .contacts__input {
-    /* удалить */
-    /* margin-bottom: 17px; */
     padding-left: 24px;
     padding-right: 24px;
     width: 383px;
@@ -167,11 +151,6 @@ input:-webkit-autofill:active {
     font-size: 16px;
     line-height: 21px;
   }
-
-  /* удалить */
-  /* .contacts__send-btn-wrapper {
-    padding-left: 37px;
-  } */
 }
 
 /* адаптив - mobile */
@@ -204,8 +183,6 @@ input:-webkit-autofill:active {
   }
 
   .contacts__input {
-    /* удалить */
-    /* margin-bottom: 15px; */
     padding-left: 21px;
     padding-right: 21px;
     width: 100%;
