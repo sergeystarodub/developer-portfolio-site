@@ -38,13 +38,21 @@
   line-height: 60px;
 }
 
-.contacts__form {
+/* удалить */
+/* .contacts__form {
   margin-bottom: 60px;
+} */
+
+.contacts__form {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
 }
 
 .contacts__input {
   display: block;
-  margin-bottom: 26px;
+  /* удалить */
+  /* margin-bottom: 26px; */
   padding-left: 40px;
   padding-right: 40px;
   width: 567px;
@@ -57,9 +65,10 @@
   border: none;
 }
 
-.contacts__input:last-child {
+/* удалить */
+/* .contacts__input:last-child {
   margin-bottom: 0;
-}
+} */
 
 .contacts__input::placeholder {
   color: #fff;
@@ -83,6 +92,8 @@ input:-webkit-autofill:active {
 .contacts__send-btn {
   display: block;
   width: 450px;
+  /* считается как 26px(это gap) + 34px = 60px */
+  margin-top: 34px;
   /* padding: 19px 19px 22px 20px; */
   /* подкорректировал padding - чтобы высота была 70px */
   padding: 18px 19px 21px 20px;
@@ -129,11 +140,14 @@ input:-webkit-autofill:active {
 
   .contacts__form {
     padding-left: 37px;
-    margin-bottom: 40px;
+    /* удалить */
+    /* margin-bottom: 40px; */
+    gap: 17px;
   }
 
   .contacts__input {
-    margin-bottom: 17px;
+    /* удалить */
+    /* margin-bottom: 17px; */
     padding-left: 24px;
     padding-right: 24px;
     width: 383px;
@@ -144,6 +158,8 @@ input:-webkit-autofill:active {
 
   .contacts__send-btn {
     width: 304px;
+    /* считается как 17px(это gap) + 23px = 40px */
+    margin-top: 23px;
     /* padding: 12px 13px 14px 14px; */
     /* подкорректировал padding - чтобы высота была 47px */
     padding: 11px 13px 13px 14px;
@@ -152,9 +168,10 @@ input:-webkit-autofill:active {
     line-height: 21px;
   }
 
-  .contacts__send-btn-wrapper {
+  /* удалить */
+  /* .contacts__send-btn-wrapper {
     padding-left: 37px;
-  }
+  } */
 }
 
 /* адаптив - mobile */
@@ -172,8 +189,7 @@ input:-webkit-autofill:active {
   }
 
   .contacts__title,
-  .contacts__form,
-  .contacts__send-btn-wrapper {
+  .contacts__form {
     padding-left: 0;
   }
 
@@ -183,8 +199,13 @@ input:-webkit-autofill:active {
     line-height: 37.3px;
   }
 
+  .contacts__form {
+    gap: 15px;
+  }
+
   .contacts__input {
-    margin-bottom: 15px;
+    /* удалить */
+    /* margin-bottom: 15px; */
     padding-left: 21px;
     padding-right: 21px;
     width: 100%;
@@ -195,6 +216,8 @@ input:-webkit-autofill:active {
 
   .contacts__send-btn {
     width: 100%;
+    /* считается как 15px(это gap) + 25px = 40px */
+    margin-top: 25px;
     /* padding: 11px 49px 12px 49px; */
     /* подкорректировал padding - чтобы высота была 43px */
     padding: 10px 49px 11px 49px;
