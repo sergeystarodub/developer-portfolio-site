@@ -2,14 +2,14 @@
   8 Секция контакты - contacts
 ========================= */
 .contacts {
-  margin-bottom: 150px;
+  margin-bottom: 10px;
   /* пока убрал иначе при уменьшении у contacts__container background-color остается*/
   /* min-height: 717px; */
   background-color: #191c19;
   border-radius: 30px;
   /* чтобы при ширине экрана меньше 1400px (width: 1400px - ширина макета) к изображению справа применялось закругление как в макете */
   /* overflow: hidden; */
-  background-image: url("../resources/contacts-image/image-programmer.png");
+  background-image: url("../resources/contacts-image/image-programmer-desktop.png");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: top right;
@@ -27,60 +27,179 @@
 } */
 
 .contacts__box-wrapper {
-  padding-top: 320px;
-  padding-bottom: 89px;
+  padding-top: 100px;
+  padding-bottom: 101px;
 }
-
-/* закоментил - исправляю */
-/* .contacts__box-wrapper {
-  position: absolute;
-  bottom: 89px;
-  width: 310px;
-} */
 
 .contacts__title {
-  margin-bottom: 28px;
-  font-size: 35px;
-  line-height: 60px;
-}
-
-.contacts__list {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.contacts__link {
+  margin-bottom: 60px;
+  max-width: 553px;
   font-size: 60px;
   line-height: 60px;
-  color: #fff;
-  text-decoration: none;
-  transition: color 0.3s;
 }
 
-.contacts__link:hover {
+.contacts__form {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+}
+
+.contacts__input {
+  display: block;
+  padding-left: 40px;
+  padding-right: 40px;
+  width: 567px;
+  height: 60px;
+  font-size: 22px;
+  line-height: 29px;
+  background-color: #3b3d3b;
+  border-radius: 100px;
+  color: #fff;
+  border: none;
+}
+
+.contacts__input::placeholder {
+  color: #fff;
+}
+
+.contacts__input:focus {
+  outline: none;
+}
+
+/* чтобы не менялся фон инпута при автокомплите */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 1000px #3b3d3b inset !important;
+  -webkit-text-fill-color: #fff !important;
+  caret-color: #fff !important; /* Задает цвет курсора */
+  transition: background-color 5000s ease-in-out 0s !important;
+}
+
+.contacts__send-btn {
+  display: block;
+  width: 450px;
+  /* считается как 26px(это gap) + 34px = 60px */
+  margin-top: 34px;
+  /* padding: 19px 19px 22px 20px; */
+  /* подкорректировал padding - чтобы высота была 70px */
+  padding: 18px 19px 21px 20px;
+  border: 1px solid #1bff07;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 29px;
+  background-color: #1bff07;
+  color: #000;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.contacts__send-btn:hover {
+  background-color: #191c19;
   color: #1bff07;
 }
 
-/* закоментил - исправляю */
-/* .contacts__image-wrapper {
-  position: absolute;
-  после pixel perfect
-  right: -111px;
-  не стал ограничивать пока width жестким размером-чтобы при возможном увеличении секции contacts изображение изменялось пропорционально своей width и height
-  width: 727px;
-  height: 100%;
-} */
+/* адаптив - tablet */
 
-/* исправляю-потом удалить */
-/* .contacts__image {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-} */
+@media (max-width: 1199px) {
+  .contacts {
+    margin-bottom: 7px;
+    border-radius: 20px;
+    /* чтобы при ширине экрана меньше 1400px (width: 1400px - ширина макета) к изображению справа применялось закругление как в макете */
+    /* overflow: hidden; */
+    background-image: url("../resources/contacts-image/image-programmer-tablet.png");
+  }
 
-/* заменить жесткие значения на адаптивные при верстке responsive */
-/* right: -111px;
-bottom: 89px;
-width: 310px; */
+  .contacts__box-wrapper {
+    padding-top: 50px;
+    padding-bottom: 86px;
+  }
+
+  .contacts__title {
+    padding-left: 35px;
+    margin-bottom: 40px;
+    max-width: 373px;
+    font-size: 40px;
+    line-height: 40.5px;
+  }
+
+  .contacts__form {
+    padding-left: 37px;
+    gap: 17px;
+  }
+
+  .contacts__input {
+    padding-left: 24px;
+    padding-right: 24px;
+    width: 383px;
+    height: 41px;
+    font-size: 16px;
+    line-height: 21px;
+  }
+
+  .contacts__send-btn {
+    width: 304px;
+    /* считается как 17px(это gap) + 23px = 40px */
+    margin-top: 23px;
+    /* padding: 12px 13px 14px 14px; */
+    /* подкорректировал padding - чтобы высота была 47px */
+    padding: 11px 13px 13px 14px;
+    border-radius: 7px;
+    font-size: 16px;
+    line-height: 21px;
+  }
+}
+
+/* адаптив - mobile */
+
+@media (max-width: 767px) {
+  .contacts {
+    margin-bottom: 0;
+    border-radius: 19px;
+    background-image: none;
+  }
+
+  .contacts__box-wrapper {
+    padding-top: 50px;
+    padding-bottom: 52px;
+  }
+
+  .contacts__title,
+  .contacts__form {
+    padding-left: 0;
+  }
+
+  .contacts__title {
+    max-width: 310px;
+    font-size: 35px;
+    line-height: 37.3px;
+  }
+
+  .contacts__form {
+    gap: 15px;
+  }
+
+  .contacts__input {
+    padding-left: 21px;
+    padding-right: 21px;
+    width: 100%;
+    height: 38px;
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  .contacts__send-btn {
+    width: 100%;
+    /* считается как 15px(это gap) + 25px = 40px */
+    margin-top: 25px;
+    /* padding: 11px 49px 12px 49px; */
+    /* подкорректировал padding - чтобы высота была 43px */
+    padding: 10px 49px 11px 49px;
+    border-radius: 6px;
+    font-size: 15px;
+    line-height: 20px;
+  }
+}
