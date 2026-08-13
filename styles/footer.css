@@ -3,7 +3,8 @@
 ========================= */
 .footer {
   font-family: "Manrope", sans-serif;
-  padding: 76px 0 24px;
+  /* потом удалить */
+  /* padding: 76px 0 24px; */
   background-color: #fff;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
@@ -11,10 +12,32 @@
   /* min-height: 223px; */
 }
 
-.footer__container {
+/* потом удалить отсюда и из html */
+/* .footer__container {
   display: flex;
   flex-direction: column;
-  gap: 66px;
+  row-gap: 59px;
+} */
+
+.footer-inner {
+  padding: 76px 0 32px 0;
+}
+
+.footer__row-wrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: 59px;
+}
+
+.footer__row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer__col {
+  /* задал чтобы была своя ширина, потом в mobile задаю width: 100% */
+  width: auto;
 }
 
 .footer__description {
@@ -28,4 +51,15 @@
   line-height: 27px;
   color: #000;
   opacity: 0.5;
+}
+
+@media (max-width: 1199px) {
+
+}
+
+@media (max-width: 767px) {
+  /* пробую */
+  .footer__col {
+    width: 100%;
+  }
 }
