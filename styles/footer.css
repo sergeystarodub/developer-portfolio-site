@@ -40,7 +40,11 @@
   width: auto;
 }
 
-.footer__description {
+.footer-element {
+  width: 100%;
+}
+
+.footer-element__description {
   font-size: 22px;
   line-height: 30px;
   color: #000;
