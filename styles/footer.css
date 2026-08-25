@@ -50,7 +50,25 @@
   color: #000;
 }
 
-.footer__copyright {
+.footer-element__list {
+  padding-top: 7px;
+  display: flex;
+  /* после pixel perfect */
+  gap: 26px;
+}
+
+.footer-element__link {
+  display: block;
+  line-height: 30px;
+  font-size: 22px;
+  text-decoration: none;
+  color: #000;
+  /* чтобы при нажатии на планшете и телефоне не подсвечивалось синим */
+  -webkit-tap-highlight-color: transparent;
+}
+
+.footer__copyright,
+.footer__text {
   font-size: 20px;
   line-height: 27px;
   color: #000;
@@ -58,7 +76,6 @@
 }
 
 @media (max-width: 1199px) {
-
 }
 
 @media (max-width: 767px) {
