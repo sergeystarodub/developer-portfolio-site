@@ -65,6 +65,12 @@
   color: #000;
   /* чтобы при нажатии на планшете и телефоне не подсвечивалось синим */
   -webkit-tap-highlight-color: transparent;
+  transition: color 0.3s ease;
+}
+
+.footer-element__link:hover {
+  color: #1bff07;
+  
 }
 
 .footer__copyright,
@@ -116,8 +122,53 @@
 }
 
 @media (max-width: 767px) {
+  .footer {
+    border-top-left-radius: 19px;
+    border-top-right-radius: 19px;
+  }
+  .footer-inner {
+    padding: 47px 0 34px 0;
+  }
+
+  .footer__row-wrapper {
+    row-gap: 40px;
+  }
   /* пробую */
   .footer__col {
     width: 100%;
+  }
+
+  .footer__row_upper-gap {
+    gap: 20px;
+  }
+
+  .footer__row_lower-gap {
+    gap: 12px;
+  }
+
+  .footer-element__description {
+    max-width: 198px;
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  .footer-element__list {
+    padding-top: 0;
+    gap: 12px;
+  }
+
+  .footer-element__link {
+    line-height: 20px;
+    font-size: 15px;
+  }
+
+  .footer__copyright,
+  .footer__text {
+    font-size: 13px;
+    line-height: 18px;
+  }
+
+  .footer__text {
+    padding-right: 0;
   }
 }
