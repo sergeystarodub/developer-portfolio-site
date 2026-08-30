@@ -12,13 +12,6 @@
   /* min-height: 223px; */
 }
 
-/* потом удалить отсюда и из html */
-/* .footer__container {
-  display: flex;
-  flex-direction: column;
-  row-gap: 59px;
-} */
-
 .footer-inner {
   padding: 76px 0 32px 0;
 }
@@ -70,15 +63,15 @@
 
 .footer-nav-menu__link:hover {
   color: #1bff07;
-  
 }
 
 .footer__copyright,
-.footer__text {
+.footer__policy-link {
   font-size: 20px;
   line-height: 27px;
   color: #000;
   opacity: 0.5;
+  text-decoration: none;
 }
 
 @media (max-width: 1199px) {
@@ -111,12 +104,12 @@
   }
 
   .footer__copyright,
-  .footer__text {
+  .footer__policy-link {
     font-size: 14px;
     line-height: 19px;
   }
 
-  .footer__text {
+  .footer__policy-link {
     padding-right: 5px;
   }
 }
@@ -163,12 +156,12 @@
   }
 
   .footer__copyright,
-  .footer__text {
+  .footer__policy-link {
     font-size: 13px;
     line-height: 18px;
   }
 
-  .footer__text {
+  .footer__policy-link {
     padding-right: 0;
   }
 }
