@@ -74,6 +74,11 @@
   text-decoration: none;
 }
 
+.footer__policy-link:hover {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
 @media (max-width: 1199px) {
   .footer {
     border-top-left-radius: 20px;
