@@ -12,13 +12,6 @@
   /* min-height: 223px; */
 }
 
-/* потом удалить отсюда и из html */
-/* .footer__container {
-  display: flex;
-  flex-direction: column;
-  row-gap: 59px;
-} */
-
 .footer-inner {
   padding: 76px 0 32px 0;
 }
@@ -40,26 +33,140 @@
   width: auto;
 }
 
-.footer__description {
+.footer-element {
+  width: 100%;
+}
+
+.footer-element__description {
   font-size: 22px;
   line-height: 30px;
   color: #000;
 }
 
-.footer__copyright {
+.footer-nav-menu__list {
+  padding-top: 7px;
+  display: flex;
+  /* после pixel perfect */
+  gap: 26px;
+}
+
+.footer-nav-menu__link {
+  display: block;
+  line-height: 30px;
+  font-size: 22px;
+  text-decoration: none;
+  color: #000;
+  /* чтобы при нажатии на планшете и телефоне не подсвечивалось синим */
+  -webkit-tap-highlight-color: transparent;
+  transition: color 0.3s ease;
+}
+
+.footer-nav-menu__link:hover {
+  color: #1bff07;
+}
+
+.footer__copyright,
+.footer__policy-link {
   font-size: 20px;
   line-height: 27px;
   color: #000;
   opacity: 0.5;
+  text-decoration: none;
+}
+
+.footer__policy-link:hover {
+  opacity: 1;
+  transition: opacity 0.3s ease;
 }
 
 @media (max-width: 1199px) {
+  .footer {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
 
+  .footer-inner {
+    padding: 51px 25px 21px 25px;
+  }
+
+  .footer__row-wrapper {
+    row-gap: 38px;
+  }
+
+  .footer-element__description {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .footer-nav-menu__list {
+    padding-top: 5px;
+    gap: 14px;
+  }
+
+  .footer-nav-menu__link {
+    line-height: 22px;
+    font-size: 16px;
+  }
+
+  .footer__copyright,
+  .footer__policy-link {
+    font-size: 14px;
+    line-height: 19px;
+  }
+
+  .footer__policy-link {
+    padding-right: 5px;
+  }
 }
 
 @media (max-width: 767px) {
+  .footer {
+    border-top-left-radius: 19px;
+    border-top-right-radius: 19px;
+  }
+  .footer-inner {
+    padding: 47px 0 34px 0;
+  }
+
+  .footer__row-wrapper {
+    row-gap: 40px;
+  }
   /* пробую */
   .footer__col {
     width: 100%;
+  }
+
+  .footer__row_upper-gap {
+    gap: 20px;
+  }
+
+  .footer__row_lower-gap {
+    gap: 12px;
+  }
+
+  .footer-element__description {
+    max-width: 198px;
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  .footer-nav-menu__list {
+    padding-top: 0;
+    gap: 12px;
+  }
+
+  .footer-nav-menu__link {
+    line-height: 20px;
+    font-size: 15px;
+  }
+
+  .footer__copyright,
+  .footer__policy-link {
+    font-size: 13px;
+    line-height: 18px;
+  }
+
+  .footer__policy-link {
+    padding-right: 0;
   }
 }
