@@ -85,17 +85,31 @@
           <h2 class="projects__title">Самые свежие проекты</h2>
           <ul class="projects-list">
             <li class="projects-item">
-              <a class="projects-item__link" href="#">
+              <a
+                class="projects-item__link"
+                href="https://sergeystarodub.github.io/metrica-site/"
+                target="_blank"
+              >
                 <div class="projects-item__image-wrapper">
-                  <img
-                    class="projects-item__image"
-                    src="resources/projects-image/Realhome-image.png"
-                    alt="Изображение проекта Realhome, небоскреб"
-                  />
+                  <picture>
+                    <source
+                      media="(max-width: 500px)"
+                      srcset="resources/projects-image/mobile_Metrica-image.png"
+                    />
+                    <source
+                      media="(max-width: 1199px)"
+                      srcset="resources/projects-image/tablet_Metrica-image.png"
+                    />
+                    <img
+                      class="projects-item__image"
+                      src="resources/projects-image/desktop_Metrica-image.png"
+                      alt="Изображение проекта студии Метрика, кресло в гостинной"
+                    />
+                  </picture>
                 </div>
                 <div class="projects-item__box">
-                  <h3 class="projects-item__heading">Realhome</h3>
-                  <p class="projects-item__desc">дизайн,верстка, настройка</p>
+                  <h3 class="projects-item__heading">Метрика</h3>
+                  <p class="projects-item__desc">верстка, настройка</p>
                 </div>
               </a>
             </li>
@@ -433,7 +447,9 @@
               </div>
               <div class="footer__col">
                 <div class="footer-element">
-                  <a class="footer__policy-link" href="#">политика обработки данных</a>
+                  <a class="footer__policy-link" href="#"
+                    >политика обработки данных</a
+                  >
                 </div>
               </div>
             </div>

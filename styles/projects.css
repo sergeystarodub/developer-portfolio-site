@@ -4,6 +4,10 @@
 
 /* color уже задан в body */
 
+.projects {
+  margin-bottom: 150px;
+}
+
 .projects__title {
   margin-bottom: 40px;
   font-size: 55px;
@@ -14,6 +18,9 @@
 }
 
 .projects-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
   margin-bottom: 80px;
 }
 
@@ -76,8 +83,9 @@
   cursor: pointer;
   transition: color 0.3s;
   /* после pixel perfect */
-  position: relative;
-  left: -2px;
+  /* это наверное не нужно в конце верстки удалить */
+  /* position: relative;
+  left: -2px; */
 }
 
 .projects__btn:hover {
@@ -90,6 +98,12 @@
   color: #1bff07;
 }
 
-.projects {
-  margin-bottom: 150px;
+/* адаптив - tablet */
+
+@media (max-width: 1199px) {
+}
+
+/* адаптив - mobile */
+
+@media (max-width: 767px) {
 }
