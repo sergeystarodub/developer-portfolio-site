@@ -38,6 +38,19 @@
   text-decoration: none;
 }
 
+.content-label-wrapper {
+  position: absolute;
+  left: 50px;
+  top: 50px;
+}
+
+.content-label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* тут надо доделать */
+}
+
 .projects-item__image-wrapper {
   height: 550px;
   border-radius: 30px;
