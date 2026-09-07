@@ -48,7 +48,25 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  /* тут надо доделать */
+  width: 206px;
+  height: 47px;
+  background-color: #1bff07;
+  border-radius: 100px;
+}
+
+.content-label_sizes-nothing {
+  width: 245px;
+}
+
+.content-label_sizes-toptrip {
+  width: 212px;
+}
+
+.content {
+  font-family: "Manrope", sans-serif;
+  font-size: 20px;
+  line-height: 27px;
+  color: #000;
 }
 
 .projects-item__image-wrapper {
