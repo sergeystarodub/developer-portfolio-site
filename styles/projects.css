@@ -192,14 +192,13 @@
     border-radius: 8px;
     font-size: 24px;
     line-height: 32px;
-    text-align: center;
   }
 
   .projects__btn:hover {
     /* фиксированную height пока убрал скорректировал line-height */
     /* чтобы не увеличивалась высота ведь border дает по 1px сверху и снизу */
     /* height: 124px; */
-    /* после pixel perfect уменьшил на 2px так как если height: 153px и border 1px сверху и снизу line-height тоже уменьшается на 2px */
+    /* после pixel perfect уменьшил на 2px так как если height: 124px и border 1px сверху и снизу line-height тоже уменьшается на 2px */
     line-height: 30px;
   }
 }
@@ -207,4 +206,77 @@
 /* адаптив - mobile */
 
 @media (max-width: 767px) {
+  .projects {
+    margin-bottom: 100px;
+  }
+
+  .projects__title {
+    margin-bottom: 34px;
+    max-width: 268px;
+    font-size: 30px;
+    line-height: 39px;
+    /* после pixel perfect */
+    left: -2px;
+  }
+
+  .projects-list {
+    margin-bottom: 60px;
+  }
+
+  .projects-item_offset-nothing {
+    margin-bottom: 10px;
+  }
+
+  .content-label-wrapper {
+    left: 30px;
+    top: 30px;
+  }
+
+  .content-label {
+    width: 147px;
+    height: 30px;
+    border-radius: 64px;
+  }
+
+  .content-label_sizes-nothing {
+    width: 158px;
+  }
+
+  .content-label_sizes-toptrip {
+    width: 140px;
+    height: 27px;
+    border-radius: 57px;
+  }
+
+  .content {
+    font-size: 13px;
+    line-height: 18px;
+  }
+
+  .projects-item__box {
+    left: 35px;
+    bottom: 50px;
+  }
+
+  .projects-item__desc {
+    font-size: 16px;
+    line-height: 21px;
+  }
+
+  .projects__btn {
+    padding: 28px 0 29px 0;
+    width: 100%;
+    display: inline-block;
+    border-radius: 8px;
+    font-size: 18px;
+    line-height: 23px;
+  }
+
+  .projects__btn:hover {
+    /* фиксированную height пока убрал скорректировал line-height */
+    /* чтобы не увеличивалась высота ведь border дает по 1px сверху и снизу */
+    /* height: 80px; */
+    /* после pixel perfect уменьшил на 2px так как если height: 80px и border 1px сверху и снизу line-height тоже уменьшается на 2px */
+    line-height: 21px;
+  }
 }
