@@ -114,6 +114,8 @@
   color: #000;
   cursor: pointer;
   transition: color 0.3s;
+  /* чтобы при нажатии на планшете и телефоне не подсвечивалось синим */
+  -webkit-tap-highlight-color: transparent;
 }
 
 .projects__btn:hover {
