@@ -164,11 +164,11 @@
     border-radius: 81px;
   }
 
-  .badge_sizes-nothing {
+  .badge_size-nothing {
     padding: 0 18.5px;
   }
 
-  .badge_sizes-toptrip {
+  .badge_size-toptrip {
     padding: 0 21.5px;
   }
 
@@ -203,7 +203,6 @@
     padding: 44px 91px 46px 93px;
     /* пока закоментил - потом может быть удалить */
     /* width: 460px; */
-    display: inline-block;
     border-radius: 8px;
     font-size: 24px;
     line-height: 32px;
@@ -245,11 +244,11 @@
     border-radius: 64px;
   }
 
-  .badge_sizes-nothing {
+  .badge_size-nothing {
     padding: 0 12px;
   }
 
-  .badge_sizes-toptrip {
+  .badge_size-toptrip {
     height: 27px;
     padding: 0 14px;
     border-radius: 57px;
@@ -275,7 +274,6 @@
     /* паддинг везде уменьшил на 1px так как задал border 1px чтобы сохранить размеры как в макете */
     padding: 27px 0 28px 0;
     width: 100%;
-    display: inline-block;
     border-radius: 8px;
     font-size: 18px;
     line-height: 23px;
