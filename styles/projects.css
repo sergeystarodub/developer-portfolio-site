@@ -115,7 +115,9 @@
 }
 
 .projects__btn {
-  padding: 56px 119px 58px 120px;
+  /* padding: 56px 119px 58px 120px; */
+  /* паддинг везде уменьшил на 1px так как задал border 1px чтобы сохранить размеры как в макете */
+  padding: 55px 118px 57px 119px;
   /* пока закоментил - потом может быть удалить */
   /* width: 582px; */
   display: inline-block;
@@ -124,6 +126,7 @@
   line-height: 39px;
   text-align: center;
   background-color: #1bff07;
+  border: 1px solid #1bff07;
   text-decoration: none;
   color: #000;
   cursor: pointer;
@@ -133,12 +136,6 @@
 }
 
 .projects__btn:hover {
-  /* фиксированную height пока убрал скорректировал line-height */
-  /* чтобы не увеличивалась высота ведь border дает по 1px сверху и снизу */
-  /* height: 153px; */
-  /* после pixel perfect уменьшил на 2px так как если height: 153px и border 1px сверху и снизу line-height тоже уменьшается на 2px */
-  line-height: 37px;
-  border: 1px solid #1bff07;
   background-color: #000;
   color: #1bff07;
 }
@@ -201,21 +198,15 @@
   }
 
   .projects__btn {
-    padding: 45px 92px 47px 94px;
+    /* padding: 45px 92px 47px 94px; */
+    /* паддинг везде уменьшил на 1px так как задал border 1px чтобы сохранить размеры как в макете */
+    padding: 44px 91px 46px 93px;
     /* пока закоментил - потом может быть удалить */
     /* width: 460px; */
     display: inline-block;
     border-radius: 8px;
     font-size: 24px;
     line-height: 32px;
-  }
-
-  .projects__btn:hover {
-    /* фиксированную height пока убрал скорректировал line-height */
-    /* чтобы не увеличивалась высота ведь border дает по 1px сверху и снизу */
-    /* height: 124px; */
-    /* после pixel perfect уменьшил на 2px так как если height: 124px и border 1px сверху и снизу line-height тоже уменьшается на 2px */
-    line-height: 30px;
   }
 }
 
@@ -280,19 +271,13 @@
   }
 
   .projects__btn {
-    padding: 28px 0 29px 0;
+    /* padding: 28px 0 29px 0; */
+    /* паддинг везде уменьшил на 1px так как задал border 1px чтобы сохранить размеры как в макете */
+    padding: 27px 0 28px 0;
     width: 100%;
     display: inline-block;
     border-radius: 8px;
     font-size: 18px;
     line-height: 23px;
-  }
-
-  .projects__btn:hover {
-    /* фиксированную height пока убрал скорректировал line-height */
-    /* чтобы не увеличивалась высота ведь border дает по 1px сверху и снизу */
-    /* height: 80px; */
-    /* после pixel perfect уменьшил на 2px так как если height: 80px и border 1px сверху и снизу line-height тоже уменьшается на 2px */
-    line-height: 21px;
   }
 }
