@@ -95,6 +95,8 @@ input:-webkit-autofill:active {
   color: #000;
   cursor: pointer;
   transition: all 0.3s ease;
+  /* чтобы при нажатии на планшете и телефоне не подсвечивалось синим */
+  -webkit-tap-highlight-color: transparent;
 }
 
 .contacts__send-btn:hover {

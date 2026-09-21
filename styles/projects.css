@@ -4,6 +4,10 @@
 
 /* color уже задан в body */
 
+.projects {
+  margin-bottom: 150px;
+}
+
 .projects__title {
   margin-bottom: 40px;
   font-size: 55px;
@@ -14,6 +18,9 @@
 }
 
 .projects-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
   margin-bottom: 80px;
 }
 
@@ -29,6 +36,51 @@
   display: block;
   color: currentColor;
   text-decoration: none;
+}
+
+.projects-item__badge {
+  position: absolute;
+  left: 50px;
+  top: 50px;
+}
+
+/* первый вариант с badge - тоже рабочий - решил сделать через падинги - этот закоментил*/
+
+/* .badge {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 206px;
+  height: 47px;
+  background-color: #1bff07;
+  border-radius: 100px;
+}
+
+.badge_sizes-nothing {
+  width: 245px;
+}
+
+.badge_sizes-toptrip {
+  width: 212px;
+} */
+
+/* второй вариант */
+
+.badge {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  height: 47px;
+  padding: 0 20px;
+  background-color: #1bff07;
+  border-radius: 100px;
+}
+
+.badge__text {
+  font-family: "Manrope", sans-serif;
+  font-size: 20px;
+  line-height: 27px;
+  color: #000;
 }
 
 .projects-item__image-wrapper {
@@ -63,33 +115,167 @@
 }
 
 .projects__btn {
-  padding: 56px 85px 58px 86px;
-  width: 582px;
+  /* padding: 56px 119px 58px 120px; */
+  /* паддинг везде уменьшил на 1px так как задал border 1px чтобы сохранить размеры как в макете */
+  padding: 55px 118px 57px 119px;
+  /* пока закоментил - потом может быть удалить */
+  /* width: 582px; */
   display: inline-block;
   border-radius: 10px;
   font-size: 30px;
   line-height: 39px;
   text-align: center;
   background-color: #1bff07;
+  border: 1px solid #1bff07;
   text-decoration: none;
   color: #000;
   cursor: pointer;
-  transition: color 0.3s;
-  /* после pixel perfect */
-  position: relative;
-  left: -2px;
+  transition: all 0.3s ease;
+  /* чтобы при нажатии на планшете и телефоне не подсвечивалось синим */
+  -webkit-tap-highlight-color: transparent;
 }
 
 .projects__btn:hover {
-  /* чтобы не увеличивалась высота ведь border дает по 1px сверху и снизу */
-  height: 153px;
-  /* после pixel perfect уменьшил на 2px так как если height: 153px и border 1px сверху и снизу line-height тоже уменьшается на 2px */
-  line-height: 37px;
-  border: 1px solid #1bff07;
   background-color: #000;
   color: #1bff07;
 }
 
-.projects {
-  margin-bottom: 150px;
+/* адаптив - tablet */
+
+@media (max-width: 1199px) {
+  .projects__title {
+    margin-bottom: 53px;
+    font-size: 45px;
+    line-height: 59px;
+  }
+
+  .projects-list {
+    margin-bottom: 64px;
+  }
+
+  .projects-item__badge {
+    left: 40px;
+    top: 40px;
+  }
+
+  .badge {
+    height: 38px;
+    padding: 0 16px;
+    border-radius: 81px;
+  }
+
+  .badge_size-nothing {
+    padding: 0 18.5px;
+  }
+
+  .badge_size-toptrip {
+    padding: 0 21.5px;
+  }
+
+  .badge__text {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .projects-item__image-wrapper {
+    height: 445px;
+    border-radius: 24px;
+  }
+
+  .projects-item__box {
+    left: 40px;
+    bottom: 40px;
+  }
+
+  .projects-item__heading {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  .projects-item__desc {
+    font-size: 24px;
+    line-height: 31px;
+  }
+
+  .projects__btn {
+    /* padding: 45px 92px 47px 94px; */
+    /* паддинг везде уменьшил на 1px так как задал border 1px чтобы сохранить размеры как в макете */
+    padding: 44px 91px 46px 93px;
+    /* пока закоментил - потом может быть удалить */
+    /* width: 460px; */
+    border-radius: 8px;
+    font-size: 24px;
+    line-height: 32px;
+  }
+}
+
+/* адаптив - mobile */
+
+@media (max-width: 767px) {
+  .projects {
+    margin-bottom: 100px;
+  }
+
+  .projects__title {
+    margin-bottom: 34px;
+    max-width: 268px;
+    font-size: 30px;
+    line-height: 39px;
+    /* после pixel perfect */
+    left: -2px;
+  }
+
+  .projects-list {
+    margin-bottom: 60px;
+  }
+
+  .projects-item_offset-nothing {
+    margin-bottom: 10px;
+  }
+
+  .projects-item__badge {
+    left: 30px;
+    top: 30px;
+  }
+
+  .badge {
+    height: 30px;
+    padding: 0 19.5px;
+    border-radius: 64px;
+  }
+
+  .badge_size-nothing {
+    padding: 0 12px;
+  }
+
+  .badge_size-toptrip {
+    height: 27px;
+    padding: 0 14px;
+    border-radius: 57px;
+  }
+
+  .badge__text {
+    font-size: 13px;
+    line-height: 18px;
+  }
+
+  .projects-item__box {
+    left: 35px;
+    bottom: 50px;
+  }
+
+  .projects-item__desc {
+    font-size: 16px;
+    line-height: 21px;
+  }
+
+  .projects__btn {
+    /* padding: 28px 0 29px 0; */
+    /* паддинг везде уменьшил на 1px так как задал border 1px чтобы сохранить размеры как в макете */
+    padding: 27px 0 28px 0;
+    width: 100%;
+    border-radius: 8px;
+    font-size: 18px;
+    line-height: 23px;
+  }
 }

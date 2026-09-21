@@ -85,53 +85,101 @@
           <h2 class="projects__title">Самые свежие проекты</h2>
           <ul class="projects-list">
             <li class="projects-item">
-              <a class="projects-item__link" href="#">
+              <a
+                class="projects-item__link"
+                href="https://sergeystarodub.github.io/metrica-site/"
+                target="_blank"
+              >
+                <div class="projects-item__badge">
+                  <div class="badge">
+                    <span class="badge__text">дизайн интерьера</span>
+                  </div>
+                </div>
                 <div class="projects-item__image-wrapper">
-                  <img
-                    class="projects-item__image"
-                    src="resources/projects-image/Realhome-image.png"
-                    alt="Изображение проекта Realhome, небоскреб"
-                  />
+                  <picture>
+                    <source
+                      media="(max-width: 500px)"
+                      srcset="resources/projects-image/mobile_Metrica-image.png"
+                    />
+                    <source
+                      media="(max-width: 1199px)"
+                      srcset="resources/projects-image/tablet_Metrica-image.png"
+                    />
+                    <img
+                      class="projects-item__image"
+                      src="resources/projects-image/desktop_Metrica-image.png"
+                      alt="Изображение проекта студии Метрика, кресло в гостинной"
+                    />
+                  </picture>
                 </div>
                 <div class="projects-item__box">
-                  <h3 class="projects-item__heading">Realhome</h3>
-                  <p class="projects-item__desc">дизайн,верстка, настройка</p>
+                  <h3 class="projects-item__heading">Метрика</h3>
+                  <p class="projects-item__desc">верстка, настройка</p>
+                </div>
+              </a>
+            </li>
+            <li class="projects-item projects-item_offset-nothing">
+              <a class="projects-item__link" href="#" target="_blank">
+                <div class="projects-item__badge">
+                  <div class="badge badge_size-nothing">
+                    <span class="badge__text">презентация продукта</span>
+                  </div>
+                </div>
+                <div class="projects-item__image-wrapper">
+                  <picture>
+                    <source
+                      media="(max-width: 500px)"
+                      srcset="resources/projects-image/mobile_Nothing-image.png"
+                    />
+                    <source
+                      media="(max-width: 1199px)"
+                      srcset="resources/projects-image/tablet_Nothing-image.png"
+                    />
+                    <img
+                      class="projects-item__image"
+                      src="resources/projects-image/desktop_Nothing-image.png"
+                      alt="Изображение Nothing, наушники"
+                    />
+                  </picture>
+                </div>
+                <div class="projects-item__box">
+                  <h3 class="projects-item__heading">Nothing</h3>
+                  <p class="projects-item__desc">верстка, настройка</p>
                 </div>
               </a>
             </li>
             <li class="projects-item">
-              <a class="projects-item__link" href="#">
+              <a class="projects-item__link" href="#" target="_blank">
+                <div class="projects-item__badge">
+                  <div class="badge badge_size-toptrip">
+                    <span class="badge__text">заказ путешествий</span>
+                  </div>
+                </div>
                 <div class="projects-item__image-wrapper">
-                  <img
-                    class="projects-item__image"
-                    src="resources/projects-image/Glass-image.png"
-                    alt="Изображение проекта Glass, страницы сайтов"
-                  />
+                  <picture>
+                    <source
+                      media="(max-width: 500px)"
+                      srcset="resources/projects-image/mobile_Toptrip-image.png"
+                    />
+                    <source
+                      media="(max-width: 1199px)"
+                      srcset="resources/projects-image/tablet_Toptrip-image.png"
+                    />
+                    <img
+                      class="projects-item__image"
+                      src="resources/projects-image/desktop_Toptrip-image.png"
+                      alt="Изображение проекта Toptrip, сайт путешествий"
+                    />
+                  </picture>
                 </div>
                 <div class="projects-item__box">
-                  <h3 class="projects-item__heading">GLASS</h3>
-                  <p class="projects-item__desc">разработка интерфейса</p>
-                </div>
-              </a>
-            </li>
-            <li class="projects-item">
-              <a class="projects-item__link" href="#">
-                <div class="projects-item__image-wrapper">
-                  <img
-                    class="projects-item__image"
-                    src="resources/projects-image/Fesiyen-image.png"
-                    alt="Изображение проекта Fesiyen, сайт"
-                  />
-                </div>
-                <div class="projects-item__box">
-                  <h3 class="projects-item__heading">Fesiyen</h3>
-                  <p class="projects-item__desc">разработка интерфейса</p>
+                  <h3 class="projects-item__heading">TOPTRIP</h3>
+                  <p class="projects-item__desc">верстка</p>
                 </div>
               </a>
             </li>
           </ul>
-          <!-- пока закоментил чтобы проверить адаптив секции competencies - кнопка вылазила-была еще не адоптирована -->
-          <!-- <a class="projects__btn" href="#">Смотреть все проекты</a> -->
+          <a class="projects__btn" href="#">Смотреть все проекты</a>
         </div>
       </section>
       <!-- Секция компетенции -->
@@ -433,7 +481,9 @@
               </div>
               <div class="footer__col">
                 <div class="footer-element">
-                  <a class="footer__policy-link" href="#">политика обработки данных</a>
+                  <a class="footer__policy-link" href="#"
+                    >политика обработки данных</a
+                  >
                 </div>
               </div>
             </div>
