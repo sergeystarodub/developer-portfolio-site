@@ -4,10 +4,11 @@
 .hero-wrapper {
   margin-bottom: 150px;
   width: 100%;
+  /* пока закоментил если потом будет не нужным - удалить */
   /* добавил для устранения бага при уменьшении окна браузера */
-  min-width: 1180px;
+  /* min-width: 1180px; */
   height: 765px;
-  background-image: url("../resources/frontend-developer/developer-image.png");
+  background-image: url("../resources/frontend-developer/developer-image_desktop.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -34,15 +35,18 @@
 }
 
 /* сделал через флексбокс */
-.header__container-wrapper {
+.header__inner {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   height: 55px;
   /* после pixel perfect */
-  position: relative;
-  left: -2px;
-  width: 1153px;
+  /* сделал через margin-left*/
+  /* position: relative;
+  left: -2px; */
+  /* закоментил - может быть потом удалить */
+  /* width: 1153px; */
+  margin-left: -2px;
 }
 
 /* первый варинт логотипа - закоментил - сделал вторым вариантом*/
@@ -132,7 +136,7 @@
   text-align: center;
   text-decoration: none;
   color: #fff;
-  transition: color 0.3s;
+  transition: color 0.3s ease;
 }
 
 .nav-menu__link:hover {
