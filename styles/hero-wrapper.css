@@ -202,3 +202,46 @@
 .hero__title_color-green {
   color: #1bff07;
 }
+
+/* Адаптив */
+
+@media (max-width: 1199px) {
+  .hero-wrapper {
+    background-image: url("../resources/frontend-developer/developer-image_tablet.png");
+  }
+
+  .header {
+    padding-top: 23px;
+  }
+
+  .nav-menu {
+    display: none;
+  }
+
+  /* Кнопка бургера */
+  /* здесь будет код кнопки бургера - потом этот коммент удалить */
+
+  /* Секция hero */
+  .hero__content-container {
+    /* чтобы при наведении был виден контейнер */
+    min-height: 687px;
+  }
+
+  .hero__content-wrapper {
+    /* bottom: 60px; */
+    /* после pixel perfect */
+    bottom: 54px;
+  }
+
+  .hero__title {
+    margin-left: -5px;
+    max-width: 727px;
+    font-size: 60px;
+  }
+}
+
+@media (max-width: 767px) {
+}
+
+@media (max-width: 400px) {
+}
