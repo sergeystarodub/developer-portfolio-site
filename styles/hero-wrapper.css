@@ -155,13 +155,14 @@
   min-height: 683px;
 }
 
-.hero__desc {
+/* делал так раньше - этот способ закоментил - делаю по другому */
+/* .hero__desc {
   position: absolute;
-  /* расстояние от хэдера */
+  расстояние от хэдера
   top: 252px;
-  /* 15 так как падинги по бокам 15px а позиционируется от границы контейнера - то есть от 1180px */
+  15 так как падинги по бокам 15px а позиционируется от границы контейнера - то есть от 1180px
   left: 15px;
-  /* left 0 не нужен так как будет смещение за границы контейнера до 1180 а не 1150 пикселей */
+  left 0 не нужен так как будет смещение за границы контейнера до 1180 а не 1150 пикселей
   width: 430px;
   font-size: 20px;
   line-height: 26px;
@@ -170,9 +171,30 @@
 .hero__title {
   position: absolute;
   top: 384px;
-  /*left: 9px расчитал как 15-6,где 15 боковой паддинг,а 6 заезд за границу контейнера слева */
+  left: 9px расчитал как 15-6,где 15 боковой паддинг,а 6 заезд за границу контейнера слева
   left: 9px;
   width: 919px;
+  font-size: 80px;
+  line-height: 70px;
+} */
+
+.hero__content-wrapper {
+  position: absolute;
+  /* bottom: 94px; */
+  /* после pixel perfect */
+  bottom: 89px;
+}
+
+.hero__desc {
+  margin-bottom: 27px;
+  max-width: 430px;
+  font-size: 20px;
+  line-height: 26px;
+}
+
+.hero__title {
+  margin-left: -6px;
+  max-width: 919px;
   font-size: 80px;
   line-height: 70px;
 }
