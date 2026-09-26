@@ -285,6 +285,7 @@
 }
 
 /* пробовал здесь 400px но лучше подошло 575px */
+
 @media (max-width: 575px) {
   .hero-wrapper {
     background-image: url("../resources/frontend-developer/developer-image_mobile.png");
