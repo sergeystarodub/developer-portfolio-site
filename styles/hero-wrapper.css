@@ -241,7 +241,52 @@
 }
 
 @media (max-width: 767px) {
+  .hero-wrapper {
+    margin-bottom: 100px;
+    height: 716px;
+  }
+
+  .header__inner {
+    margin-left: 0;
+  }
+
+  /* Кнопка бургера */
+  /*  кнопки бургера в tablet и mobile одинаковы - если тут ничего дописывать не надо потом этот коммент удалить */
+
+  /* Секция hero */
+  .hero__content-container {
+    /* чтобы при наведении был виден контейнер */
+    min-height: 638px;
+  }
+
+  .hero__content-wrapper {
+    /* bottom: 60px; */
+    /* после pixel perfect */
+    bottom: 76px;
+  }
+
+  .hero__desc {
+    /* margin-bottom: 10px; */
+    /* после pixel perfect */
+    margin-bottom: 13px;
+    max-width: 310px;
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  .hero__title {
+    margin-left: -3px;
+    /* max-width: 353px; */
+    width: 100%;
+    /* max-width: 100%; */
+    font-size: 40px;
+    line-height: 47px;
+  }
 }
 
-@media (max-width: 400px) {
+/* пробовал здесь 400px но лучше подошло 575px */
+@media (max-width: 575px) {
+  .hero-wrapper {
+    background-image: url("../resources/frontend-developer/developer-image_mobile.png");
+  }
 }
