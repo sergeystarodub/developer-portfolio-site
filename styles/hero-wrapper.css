@@ -234,6 +234,113 @@
   opacity: 1;
   visibility: visible;
 }
+
+.burger__content {
+  width: 97%;
+  /*max-width: 362px чтобы на больших экранах меню бургер не растягивался, а был везде одинакового размера */
+  max-width: 362px;
+  height: 100%;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  background-color: #000;
+  /* справа 10px задал сам - может потом скорректировать */
+  padding: 54px 10px 191px 28px;
+  /* делаю выеэжающее меню-второй вариант через transform*/
+  transition: transform 0.6s linear;
+  transform: translateX(100%);
+}
+
+.burger_open .burger__content {
+  transform: translateX(0);
+}
+
+.burger__logo-link {
+  display: inline-block;
+  margin-bottom: 43px;
+  margin-top: 9px;
+  padding-left: 9px;
+  width: 130px;
+  border: 1px solid #1bff07;
+  border-radius: 100px;
+  background-color: #000;
+  color: #1bff07;
+  text-decoration: none;
+  font-size: 42.41px;
+  /* line-height: 55px; */
+  line-height: 39px;
+  font-weight: 700;
+  /* letter-spacing: -0.11em; */
+  cursor: pointer;
+  /* чтобы при нажатии на планшете и телефоне не подсвечивалось синим */
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* спозиционировал span - у меня надпись как бы по центру line-height: 39px в макете вверху 9 внизу 7 то есть если по центру то 8 и 8 значит у меня нужно 1px поднять снизу */
+.burger__logo-span {
+  position: relative;
+  bottom: 1px;
+  letter-spacing: -0.11em;
+  text-transform: uppercase;
+}
+
+/* разместил здесь а не в media чтобы при расширении экрана стили burger-nav-menu не исчезали на десктопе при открытом бургере - такое возможно только делать в браузере физически наверное нет*/
+.burger-nav-menu {
+  margin-bottom: 92px;
+}
+
+.burger-nav-menu__list {
+  display: flex;
+  flex-direction: column;
+  gap: 21px;
+}
+
+.burger-nav-menu__item {
+  padding-left: 9px;
+}
+
+.burger-nav-menu__link {
+  display: inline-block;
+  line-height: 33px;
+  text-align: center;
+  font-size: 25px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  /* чтобы при нажатии на планшете и телефоне не подсвечивалось синим */
+  -webkit-tap-highlight-color: transparent;
+}
+
+.burger-contacts__title {
+  /* подобрать margin-bottom */
+  margin-bottom: 10px;
+  padding-left: 12px;
+  font-size: 16px;
+  line-height: 21px;
+  color: #fff;
+  opacity: 0.5;
+}
+
+.burger-nav-menu-contacts__list {
+  display: flex;
+  flex-direction: column;
+  /* подобрать gap */
+  gap: 12px;
+}
+
+.burger-nav-menu-contacts__item {
+  padding-left: 12px;
+}
+
+.burger-nav-menu-contacts__link {
+  font-size: 20px;
+  line-height: 25px;
+  text-decoration: none;
+  color: #fff;
+  /* чтобы при нажатии на планшете и телефоне не подсвечивалось синим */
+  -webkit-tap-highlight-color: transparent;
+}
+
 /* Адаптив */
 
 @media (max-width: 1199px) {
