@@ -441,15 +441,18 @@
     width: 27px;
   }
 
+  /* Средняя линия просто исчезает */
   .burger-btn_open .burger-btn__span {
     display: none;
   }
 
+  /* Верхняя линия опускается в центр и поворачивается на 45 градусов */
   .burger-btn_open::before {
     top: 50%;
     transform: translateY(-50%) rotate(45deg);
   }
 
+  /* Нижняя линия поднимается в центр и поворачивается на -45 градусов */
   .burger-btn_open::after {
     bottom: 50%;
     transform: translateY(50%) rotate(-45deg);
