@@ -389,19 +389,19 @@
     /* top подобрать - комент удалить */
     top: 14px;
     background: none;
+    z-index: 100;
     border: none;
     cursor: pointer;
     /* чтобы при нажатии на планшете и телефоне не подсвечивалось синим */
     -webkit-tap-highlight-color: transparent;
   }
 
-  /* Верхняя линия */
-  .burger-btn::before {
-    content: "";
+  .burger-btn::before,
+  .burger-btn::after,
+  .burger-btn__span {
     display: block;
     position: absolute;
     right: 0;
-    top: 0;
     height: 3px;
     width: 100%;
     background-color: #1bff07;
@@ -409,38 +409,50 @@
     transition: all 0.5s ease;
     /* чтобы задать радиус скругления у концов линии */
     border-radius: 999px;
+  }
+
+  /* Верхняя линия */
+  .burger-btn::before {
+    content: "";
+    top: 0;
   }
 
   /* Нижняя линия */
   .burger-btn::after {
     content: "";
-    display: block;
-    position: absolute;
-    right: 0;
     bottom: 0;
-    height: 3px;
-    width: 100%;
-    background-color: #1bff07;
-    /* здесь нужен transition чтобы кнопка-бургерпереходила в кнопку-крестик и обратно плавно */
-    transition: all 0.5s ease;
-    /* чтобы задать радиус скругления у концов линии */
-    border-radius: 999px;
   }
 
   /* Средняя линия */
 
   .burger-btn__span {
-    display: block;
-    position: absolute;
-    top: 12px;
-    right: 0;
-    height: 3px;
-    width: 100%;
-    background-color: #1bff07;
-    /* здесь нужен transition чтобы кнопка-бургерпереходила в кнопку-крестик и обратно плавно */
-    transition: all 0.5s ease;
-    /* чтобы задать радиус скругления у концов линии */
-    border-radius: 999px;
+    /* сделал отступ по другому - сделал по центру через top и transform*/
+    /* через top: 12px тоже работало */
+    /* top: 12px; */
+    top: 50%;
+    /* нужно для того, чтобы идеально отцентровать среднюю линию по вертикали внутри кнопки */
+    transform: translateY(-50%);
+  }
+
+  .burger-btn_open {
+    /* подобрал при pixel perfect */
+    top: -9px;
+    left: -13px;
+    width: 27px;
+  }
+
+  .burger-btn_open .burger-btn__span {
+    display: none;
+  }
+
+  .burger-btn_open::before {
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+  }
+
+  .burger-btn_open::after {
+    bottom: 50%;
+    transform: translateY(50%) rotate(-45deg);
   }
 }
 
