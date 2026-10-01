@@ -443,7 +443,10 @@
 
   /* Средняя линия просто исчезает */
   .burger-btn_open .burger-btn__span {
-    display: none;
+    /* не стал так делать через display */
+    /* display: none; */
+    opacity: 0;
+    transform: translateY(-50%) scale(0); /* Дополнительно сжимаем в точку */
   }
 
   /* Верхняя линия опускается в центр и поворачивается на 45 градусов */
