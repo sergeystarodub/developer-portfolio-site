@@ -165,7 +165,9 @@ input:-webkit-autofill:active {
   }
 
   .contacts__box-wrapper {
-    padding-top: 50px;
+    /* padding-top: 50px; */
+    /* после pixel perfect */
+    padding-top: 52px;
     padding-bottom: 52px;
   }
 
@@ -175,6 +177,8 @@ input:-webkit-autofill:active {
   }
 
   .contacts__title {
+    /* после pixel perfect */
+    margin-bottom: 38px;
     max-width: 310px;
     font-size: 35px;
     line-height: 37.3px;
