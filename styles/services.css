@@ -52,7 +52,7 @@
   padding: 40px;
 }
 
-.services-item__list {
+.services-item__content {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
