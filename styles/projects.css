@@ -38,6 +38,12 @@
   text-decoration: none;
 }
 
+.projects-item__link:focus-visible {
+  outline: 2px solid #1bff07;
+  outline-offset: 4px;
+  border-radius: 30px;
+}
+
 .projects-item__badge {
   position: absolute;
   left: 50px;
@@ -135,7 +141,8 @@
   -webkit-tap-highlight-color: transparent;
 }
 
-.projects__btn:hover {
+.projects__btn:hover,
+.projects__btn:focus-visible {
   background-color: #000;
   color: #1bff07;
 }

@@ -5,7 +5,7 @@ const BODY_FIXED_CLASSNAME = 'body_fixed';    /* добавили 2 к назв�
 const bodyNode = document.querySelector('body');   /* добавили 2 к названию - костыль */
 const burgerNode = document.querySelector('.js-burger');
 const burgerBtnNode = document.querySelector('.js-burger-btn');
-const burgerContentNode = document.querySelector('.js-burger__content')
+const burgerContentNode = document.querySelector('.js-burger-contacts');
 
 burgerBtnNode.addEventListener('click', toggleBurger);
 

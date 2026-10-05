@@ -99,7 +99,8 @@ input:-webkit-autofill:active {
   -webkit-tap-highlight-color: transparent;
 }
 
-.contacts__send-btn:hover {
+.contacts__send-btn:hover,
+.contacts__send-btn:focus-visible {
   background-color: #191c19;
   color: #1bff07;
 }
