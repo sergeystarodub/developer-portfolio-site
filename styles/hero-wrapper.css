@@ -234,7 +234,9 @@
   /* не стал удалять-opacity */
   opacity: 0;
   visibility: hidden;
-  transition: all 0.3s linear;
+  /* transition: all 0.3s linear; */
+  /* изменил transition*/
+  transition: all 0.3s ease-out;
 }
 
 .burger_open {
@@ -255,7 +257,9 @@
   /* справа 10px задал сам - может потом скорректировать */
   padding: 54px 10px 191px 28px;
   /* делаю выеэжающее меню-второй вариант через transform*/
-  transition: transform 0.6s linear;
+  /* transition: transform 0.6s linear; */
+  /* изменил transition */
+  transition: transform 0.6s ease-out;
   transform: translateX(100%);
 }
 
